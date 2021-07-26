@@ -1,0 +1,28 @@
+.navBarStyle{
+  width: 100%;
+  height: 5em;
+  background-color: var(--theme-navbar-background);
+  color: var(--theme-page-text);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 2em;
+  box-sizing: border-box;
+  box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.1);
+  transition: all 0.50s linear;
+  
+  ul{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    li{
+      margin: 0 1em;
+    }
+  }
+}
+
+
+

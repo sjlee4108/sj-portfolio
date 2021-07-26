@@ -1,14 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Counter from './counter';
 import Controls from './control';
+import ThemeChanger from './themeChanger/themeChanger';
+// import Home from './themeChanger/homeScreen/homeScreen';
+import NavBar from './navBar/navBar';
 
 const About = (props) => {
     return <div> All there is to know about me </div>;
 };
 
 const Welcome = (props) => {
-    return <div><Counter /><Controls />Welcome</div>;
+    return <div><Counter /><Controls /><ThemeChanger />Welcome</div>;
 };
 
 const Test = (props) => {
@@ -23,7 +26,7 @@ const App = (props) => {
     return (
         <Router>
             <div>
-                <Nav />
+                <NavBar />
                 <Switch>
                     <Route exact path="/" component={Welcome} />
                     <Route path="/about" component={About} />
@@ -35,18 +38,18 @@ const App = (props) => {
     );
 };
 
-const Nav = (props) => {
-    return (
-        <nav>
-            <ul>
-                <li><NavLink to="/">Home</NavLink></li>
-                <li><NavLink to="/about">About</NavLink></li>
-                <li><NavLink to="/test/id1">test id1</NavLink></li>
-                <li><NavLink to="/test/id2">test id2</NavLink></li>
-            </ul>
-        </nav>
-    );
-};
+// const Nav = (props) => {
+//     return (
+//         <nav>
+//             <ul>
+//                 <li><NavLink to="/">Home</NavLink></li>
+//                 <li><NavLink to="/about">About</NavLink></li>
+//                 <li><NavLink to="/test/id1">test id1</NavLink></li>
+//                 <li><NavLink to="/test/id2">test id2</NavLink></li>
+//             </ul>
+//         </nav>
+//     );
+// };
 
 // ReactDOM.render(<App />, document.getElementById('main'));
 
