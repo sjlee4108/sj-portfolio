@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from './navBarStyles.scss';
 import * as text from '../../constants/texts';
+import ThemeChanger from '../themeChanger/themeChanger';
 
 const getLogoSection = () => {
   return (
-    <div>
+    <div className={styles.logoSectionContainer}>
       {text.logo}
+      <ThemeChanger />
     </div>
   );
 };
