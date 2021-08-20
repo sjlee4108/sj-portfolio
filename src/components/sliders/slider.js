@@ -1,7 +1,7 @@
-/* eslint-disable max-len */
 import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import styles from './sliderStyles.scss';
+import Tag from './tag';
 
 const getProjectImages = (projects, index) => {
   return projects.map((project, i) => <img src={project.image} alt="" className={[styles.projectImage, i === index ? styles.opacity : ''].join(' ')} />);
@@ -12,15 +12,24 @@ const getSliderDots = (index, total, reverse) => {
   <div className={[styles.dots, reverse ? styles.reversedDots : null].join(' ')}>
     {Array.from(new Array(total), (e, i) => <div className={[styles.dot, i === index ? styles.filledDot : null].join(' ')} />)}
   </div>
-);
+  );
+};
+
+const getTags = (tags) => {
+  return (
+    <div className={styles.tagsContainer}>
+        {tags.map((tag) => <Tag value={tag} />)}
+    </div>
+  );
 };
 
 const getTextSection = (contents, reverse, index) => {
-  const { title, description } = contents[index];
+  const { title, description, tags } = contents[index];
   return (
     <div className={[styles.textSection, reverse ? styles.reversedTextSection : ''].join(' ')}>
       <div className={styles.textInnerSection}>
       <h4 className={styles.title}>{title}</h4>
+      {getTags(tags)}
       <p> {description}</p>
       </div>
       {getSliderDots(index, contents.length, reverse)}
