@@ -10,9 +10,9 @@
   justify-content: space-between;
   padding: 0 2em;
   box-sizing: border-box;
-  // box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.1);
   transition: all 0.50s linear;
-  position: fixed;
+  backdrop-filter: blur(1px);
+  z-index: 1000;
 
   ul{
     width: fit-content;
