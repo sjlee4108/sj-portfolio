@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import styles from './sliderStyles.scss';
@@ -7,10 +8,16 @@ const getProjectImages = (projects, index) => {
   return projects.map((project, i) => <img src={project.image} alt="" className={[styles.projectImage, i === index ? styles.opacity : ''].join(' ')} />);
 };
 
-const getSliderDots = (index, total, reverse) => {
+const getSliderDots = (index, total, reverse, setIndex) => {
   return (
   <div className={[styles.dots, reverse ? styles.reversedDots : null].join(' ')}>
-    {Array.from(new Array(total), (e, i) => <div className={[styles.dot, i === index ? styles.filledDot : null].join(' ')} />)}
+    {Array.from(new Array(total), (e, i) => (
+<div role="button"
+  tabIndex="-1"
+  onClick={() => { if (index !== i) setIndex(i); }}
+  className={[styles.dot, i === index ? styles.filledDot : null].join(' ')}
+/>
+))}
   </div>
   );
 };
@@ -23,16 +30,19 @@ const getTags = (tags) => {
   );
 };
 
-const getTextSection = (contents, reverse, index) => {
+const getTextSection = (contents, reverse, index, setIndex) => {
   const { title, description, tags } = contents[index];
   return (
     <div className={[styles.textSection, reverse ? styles.reversedTextSection : ''].join(' ')}>
       <div className={styles.textInnerSection}>
       <h4 className={styles.title}>{title}</h4>
+      <div className={styles.spacing} />
       {getTags(tags)}
+      <div className={styles.spacing} />
       <p> {description}</p>
+      <div className={styles.spacing} />
       </div>
-      {getSliderDots(index, contents.length, reverse)}
+      {getSliderDots(index, contents.length, reverse, setIndex)}
     </div>
   );
 };
@@ -47,7 +57,7 @@ const Slider = (props) => {
         <div className={[styles.imageContainer, isReverse ? styles.reversedImage : ''].join(' ')}>
           {getProjectImages(contents, index)}
         </div>
-        {getTextSection(contents, isReverse, index)}
+        {getTextSection(contents, isReverse, index, (i) => { setIndex(i); setReverse(!isReverse); })}
       <BsChevronCompactRight className={styles.buttonRight}
         onClick={() => {
           setReverse(!isReverse);
