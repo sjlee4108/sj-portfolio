@@ -1,19 +1,19 @@
 // keys for actiontypes
 export const ActionTypes = {
-    INCREMENT: 'INCREMENT',
-    DECREMENT: 'DECREMENT',
+    SETKOREAN: 'SETKOREAN',
+    SETENGLISH: 'SETENGLISH',
 };
 
-export function increment() {
+export function setKorean() {
     return {
-        type: ActionTypes.INCREMENT,
+        type: ActionTypes.SETKOREAN,
         payload: null,
     };
 }
 
-export function decrement() {
+export function setEnglish() {
     return {
-        type: ActionTypes.DECREMENT,
+        type: ActionTypes.SETKOREAN,
         payload: null,
     };
 }

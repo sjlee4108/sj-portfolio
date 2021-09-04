@@ -1,11 +1,11 @@
 import { ActionTypes } from '../actions';
 
-const CountReducer = (state = 0, action) => {
+const CountReducer = (state = 'korean', action) => {
     switch (action.type) {
-        case ActionTypes.INCREMENT:
-            return state + 1;
-        case ActionTypes.DECREMENT:
-            return state - 1;
+        case ActionTypes.SETKOREAN:
+            return 'korean';
+        case ActionTypes.SETENGLISH:
+            return 'english';
         default:
             return state;
     }

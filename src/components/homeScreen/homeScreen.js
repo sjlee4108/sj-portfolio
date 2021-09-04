@@ -32,6 +32,9 @@ const Home = () => {
           contents={projectsTesting}
         />
       </BodySection>
+      <BodySection title="Skills">
+        Hi
+      </BodySection>
     </div>
   );
 };
