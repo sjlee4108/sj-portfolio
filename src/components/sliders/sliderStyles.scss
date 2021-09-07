@@ -1,12 +1,18 @@
 .container{
   width: 76em;
-  height: 30em;
+  height: 32em;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   box-sizing: border-box;
   position: relative;
+
+  li{
+    font-size: 0.9em;
+    margin: 0.5em 0em;
+    line-height: 1.4em;
+  }
 }
 .title{
   font-size: 1.5em;
@@ -105,7 +111,7 @@
   flex-direction: row;
   align-self: flex-start;
   box-sizing: border-box;
-  padding-bottom: 1em;
+  padding-bottom: 0.2em;
   justify-content: flex-end;
 }
 
@@ -140,6 +146,11 @@
   .container{
     width: 62em;
   }
+}
+
+.descriptionText{
+  font-size: 0.9em;
+  line-height: 1.4em;
 }
 
 @media (max-width: 62em){

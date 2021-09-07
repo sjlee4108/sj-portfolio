@@ -30,8 +30,12 @@ const getTags = (tags) => {
   );
 };
 
+const getBulletPoints = (bullets) => {
+return bullets.map((bullet) => <li>{bullet}</li>);
+};
+
 const getTextSection = (contents, reverse, index, setIndex) => {
-  const { title, description, tags } = contents[index];
+  const { title, description, tags, bullets } = contents[index];
   return (
     <div className={[styles.textSection, reverse ? styles.reversedTextSection : ''].join(' ')}>
       <div className={styles.textInnerSection}>
@@ -39,8 +43,11 @@ const getTextSection = (contents, reverse, index, setIndex) => {
       <div className={styles.spacing} />
       {getTags(tags)}
       <div className={styles.spacing} />
-      <p> {description}</p>
+      <p className={styles.descriptionText}> {description}</p>
       <div className={styles.spacing} />
+      <ul>
+        {getBulletPoints(bullets)}
+      </ul>
       </div>
       {getSliderDots(index, contents.length, reverse, setIndex)}
     </div>
@@ -53,7 +60,15 @@ const Slider = (props) => {
 
   return (
     <div className={styles.container}>
-      <BsChevronCompactLeft className={styles.buttonLeft} />
+      <BsChevronCompactLeft className={styles.buttonLeft}
+        onClick={() => {
+          setReverse(!isReverse);
+          if (index === 0)setIndex(contents.length - 1);
+          else setIndex((index - 1) % contents.length);
+        }}
+        role="button"
+        tabIndex={0}
+      />
         <div className={[styles.imageContainer, isReverse ? styles.reversedImage : ''].join(' ')}>
           {getProjectImages(contents, index)}
         </div>

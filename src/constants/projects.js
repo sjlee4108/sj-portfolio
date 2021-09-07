@@ -13,9 +13,9 @@ export const projects = {
         As a full-stack intern, I worked on creating meditation and journal pages for the app (react-native) and created corresponding backend API calls (Node.js and MongoDB).
       `.replace(/\n/g, ' '),
       bullets: [
-      'Created app screens(Meditation, Journal, Setting Page etc) and reusable components that go with them',
+      'Created app screens(Meditation, Journal, Setting Page etc) and corresponding reusable components',
       'Created admin webpage for adding new meditation(React)',
-      'Created API calls for meditation, journal and user information',
+      'Created CRUD API calls for meditation, journal and user information (Node.js, JWT for Auth, MongoDB)',
       'Beta version expected to be launched in September and tested by clinicians.'],
     },
     {
@@ -31,7 +31,7 @@ export const projects = {
       Positive Tracks admin can assist organizers, and participants can browse/join events.
       `.replace(/\n/g, ' '),
     bullets: [
-      'Designed webpage prototype (Figma). Went through 3 different iterations based on the feedbacks from Positive Tracks and past organizers',
+      'Designed webpage prototype (Figma). 3 iterations based on the feedbacks from Positive Tracks and past users',
       'Created dashboards(organizer, admin), homepage, event signup page, and event info page and highly reusable components that go with it (buttons, tabs, textboxes ...)',
       'Received positive feedbacks from Positive Tracks and past user on the beta version',
       'Full version expected to be released from Positive Tracks'],
@@ -52,7 +52,7 @@ export const projects = {
       description: `
       As a research intern for Prof. Jan Holly, I worked on building a differential equation model that simulates a brain’s spatial disorientation,
       the inability of a person to determine his true body position, motion, and altitude relative to the earth, in circular motions. 
-      This model was applied to explain the cause of the helicopter crash in 2020 that killed Kobe Bryant and 7 others. 
+      This model was applied to explain the cause of the helicopter crash in 2020 that killed Kobe Bryant. 
       `.replace(/\n/g, ' '),
       bullets: [
       'Studied the pre-existing MATLAB codebase and modified it to provide additional visualizations and simulate under different variables',
