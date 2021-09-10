@@ -43,6 +43,12 @@ export const projects = {
       tags: ['Research', 'Robotics', 'ROS', 'Python'],
       image: 'https://image.shutterstock.com/image-photo/surreal-image-african-elephant-wearing-260nw-1365289022.jpg',
       description: 'hi2',
+      bullets: [
+        'Self-studied ROS framework and applied it to build a simple obstacle avoidance algo',
+        'Upgraded the robot(turtlebot2) to use LIDAR instead of Xbox Kinect and modified the codebase',
+        'Created maps of real-environments using SLAM and simulation environment using Gazebo',
+        'Debugged the current system and improved the performance using Rviz',
+        'Work Presented at Colby Undergraduate Summer Research Retreat'],
     },
     {
       title: 'Spatial Disorientation in Circular Motions',
