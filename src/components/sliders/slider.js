@@ -5,7 +5,13 @@ import styles from './sliderStyles.scss';
 import Tag from './tag';
 
 const getProjectImages = (projects, index) => {
-  return projects.map((project, i) => <img src={project.image} alt="" className={[styles.projectImage, i === index ? styles.opacity : ''].join(' ')} />);
+  return projects.map((project, i) => (
+<img
+  src={project.image}
+  alt=""
+  className={[styles.projectImage, i === index ? styles.opacity : '', project.imageOverflow ? null : styles.coverImage].join(' ')}
+/>
+));
 };
 
 const getSliderDots = (index, total, reverse, setIndex) => {

@@ -1,6 +1,6 @@
 .container{
   width: 76em;
-  height: 32em;
+  height: 34em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,13 +9,13 @@
   position: relative;
 
   li{
-    font-size: 0.9em;
+    font-size: 0.85em;
     margin: 0.5em 0em;
     line-height: 1.4em;
   }
 }
 .title{
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 
@@ -82,7 +82,7 @@
   z-index: 3;
   opacity: 0;
   position: absolute;
-  object-fit: cover;
+  // object-fit: cover;
 }
 
 .reversedImage{
@@ -92,7 +92,12 @@
 .opacity{
   opacity: 1;
   width: calc(100% - 3em);
-  height: calc(100% - 3em);
+  height: auto
+}
+
+.coverImage{
+  max-height: calc(100% - 3em);
+  object-fit: cover;
 }
 
 .textInnerSection{
@@ -167,13 +172,21 @@
     top: 0;
     left: 0;
   }
+
+  .projectImage{
+    object-fit: cover;
+  }
+
+  .opacity{
+    height: calc(100% - 3em);
+  }
+
   .textSection{
     width: 100%;
     position: relative;
     top: 0;
     left: 0;
     padding: 1em 3em;
-
   }
   .reversedTextSection{
     left: 0;
