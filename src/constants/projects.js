@@ -52,7 +52,7 @@ export const projects = {
       imageOverflow: false,
       description: 'hi2',
       bullets: [
-        'Self-studied ROS framework and applied it to build a simple obstacle avoidance algo',
+        'Self-studied ROS framework and applied it to build a simple obstacle avoidance.',
         'Upgraded the robot(turtlebot2) to use LIDAR instead of Xbox Kinect and modified the codebase',
         'Created maps of real-environments using SLAM and simulation environment using Gazebo',
         'Debugged the current system and improved the performance using Rviz',
