@@ -6,25 +6,25 @@ import Tag from './tag';
 
 const getProjectImages = (projects, index) => {
   return projects.map((project, i) => (
-<img
-  src={project.image}
-  alt=""
-  className={[styles.projectImage, i === index ? styles.opacity : '', project.imageOverflow ? null : styles.coverImage].join(' ')}
-/>
-));
+    <img
+      src={project.image}
+      alt=""
+      className={[styles.projectImage, i === index ? styles.opacity : '', project.imageOverflow ? null : styles.coverImage].join(' ')}
+    />
+  ));
 };
 
 const getSliderDots = (index, total, reverse, setIndex) => {
   return (
-  <div className={[styles.dots, reverse ? styles.reversedDots : null].join(' ')}>
-    {Array.from(new Array(total), (e, i) => (
-<div role="button"
-  tabIndex="-1"
-  onClick={() => { if (index !== i) setIndex(i); }}
-  className={[styles.dot, i === index ? styles.filledDot : null].join(' ')}
-/>
-))}
-  </div>
+    <div className={[styles.dots, reverse ? styles.reversedDots : null].join(' ')}>
+      {Array.from(new Array(total), (e, i) => (
+        <div role="button"
+          tabIndex="-1"
+          onClick={() => { if (index !== i) setIndex(i); }}
+          className={[styles.dot, i === index ? styles.filledDot : null].join(' ')}
+        />
+      ))}
+    </div>
   );
 };
 
