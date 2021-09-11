@@ -5,19 +5,20 @@ import TitleSection from '../titleSection/titleSection';
 import styles from './homeScreenStyles.scss';
 import { projects } from '../../constants/projects';
 
-const Home = () => {
+const Home = (props) => {
+  const { aboutMeRef, projectsRef, skillsRef } = props;
   return (
     <div className={styles.container}>
       <TitleSection name="Seungjae Lee" description="Idk what i want with life" />
-      <BodySection title="About Me">
+      <BodySection title="About Me" id="aboutme" sectionRef={aboutMeRef}>
         Hi
       </BodySection>
-      <BodySection title="Projects">
+      <BodySection title="Projects" id="projects" sectionRef={projectsRef}>
         <Slider title="Testing here"
           contents={projects.english}
         />
       </BodySection>
-      <BodySection title="Skills">
+      <BodySection title="Skills" id="skills" sectionRef={skillsRef}>
         Hi
       </BodySection>
     </div>

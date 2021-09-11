@@ -9,12 +9,18 @@ const FallBack = (props) => {
 };
 
 const App = (props) => {
+    const aboutMeRef = React.useRef(null);
+    const projectsRef = React.useRef(null);
+    const skillsRef = React.useRef(null);
+    const aboutMeScroll = () => { console.log('testing'); aboutMeRef.current.scrollIntoView(); };
+    const projectsScroll = () => projectsRef.current.scrollIntoView();
+    const skillsScroll = () => skillsRef.current.scrollIntoView();
     return (
         <Router>
             <div>
-                <NavBar />
+                <NavBar onClickAboutMe={aboutMeScroll} onClickProjects={projectsScroll} onClickSkills={skillsScroll} />
                 <Switch>
-                    <Route exact path="/" component={Home} />
+                    <Route exact path="/" render={() => <Home aboutMeRef={aboutMeRef} projectsRef={projectsRef} skillsRef={skillsRef} />} />
                     <Route component={FallBack} />
                 </Switch>
             </div>

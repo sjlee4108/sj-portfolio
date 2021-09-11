@@ -11,14 +11,15 @@ const getLogoSection = () => {
     </div>
   );
 };
-const NavBar = () => {
+const NavBar = (props) => {
+  const { onClickAboutMe, onClickProjects, onClickSkills } = props;
   return (
     <nav className={styles.navBarStyle}>
       {getLogoSection()}
       <ul>
-        <li>Item 1</li>
-        <li>Item 1</li>
-        <li>Item 1</li>
+        <li><ul onClick={onClickAboutMe}>About Me</ul></li>
+        <li><ul onClick={onClickProjects}>Projects</ul></li>
+        <li><ul onClick={onClickSkills}>Skills</ul></li>
       </ul>
     </nav>
   );
