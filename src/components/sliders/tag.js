@@ -5,7 +5,7 @@ const Tag = (props) => {
   const { value } = props;
   return (
     <div className={styles.tagContainer}>
-      {`#${value}`}
+      {value}
     </div>
   );
 };

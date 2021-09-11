@@ -67,12 +67,11 @@ export const projects = {
       description: `
       As a research intern for Prof. Jan Holly, I worked on building a differential equation model that simulates a brain’s spatial disorientation,
       the inability of a person to determine his true body position, motion, and altitude relative to the earth, in circular motions. 
-      This model was applied to explain the cause of the helicopter crash in 2020 that killed Kobe Bryant. 
       `.replace(/\n/g, ' '),
       bullets: [
       'Studied the pre-existing MATLAB codebase and modified it to provide additional visualizations and simulate under different variables',
       'Studied research papers of conducted experiments of spatial disorientation and applied our model to explain the result of these experiments',
-      'Collect data for the accident of Kobe Bryant and simulate the crash under the given condition',
+      'Collect data for the accident of Kobe Bryant and simulate the crash under the given condition. Simulation shown in the video',
       'Work presented at the Vestibular-Oriented Research Meeting 2021, an international meeting hosted remotely by Ohio State University.'],
     },
 
