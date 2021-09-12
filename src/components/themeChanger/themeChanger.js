@@ -19,7 +19,7 @@ const setLight = () => {
   bodyStyles.setProperty('--theme-section-background', 'whitesmoke');
   bodyStyles.setProperty('--theme-slider-background-1', 'lightgreen');
   bodyStyles.setProperty('--theme-slider-background-2', 'lightblue');
-  bodyStyles.setProperty('--theme-skill-background', 'rgb(45, 45, 40)');
+  bodyStyles.setProperty('--theme-skill-background', 'oldlace');
 };
 
 const ThemeChanger = () => {
