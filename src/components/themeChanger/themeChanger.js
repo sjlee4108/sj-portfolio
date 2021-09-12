@@ -8,6 +8,7 @@ const setDark = () => {
   bodyStyles.setProperty('--theme-section-background', 'rgb(80, 80, 80)');
   bodyStyles.setProperty('--theme-slider-background-1', 'rgb(20, 20, 20)');
   bodyStyles.setProperty('--theme-slider-background-2', 'rgb(45, 45, 40)');
+  bodyStyles.setProperty('--theme-skill-background', '#1f292a');
 };
 
 const setLight = () => {
@@ -18,6 +19,7 @@ const setLight = () => {
   bodyStyles.setProperty('--theme-section-background', 'whitesmoke');
   bodyStyles.setProperty('--theme-slider-background-1', 'lightgreen');
   bodyStyles.setProperty('--theme-slider-background-2', 'lightblue');
+  bodyStyles.setProperty('--theme-skill-background', 'rgb(45, 45, 40)');
 };
 
 const ThemeChanger = () => {
