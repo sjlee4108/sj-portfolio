@@ -95,7 +95,7 @@ const Matlab = () => {
 
 export const techStacks = [
   {
-    name: 'Python/ROS',
+    name: 'Python / ROS',
     icon: Python,
   },
   {
@@ -107,11 +107,11 @@ export const techStacks = [
     icon: ReactNative,
   },
   {
-    name: 'HTML/CSS',
+    name: 'HTML / CSS',
     icon: HTML,
   },
   {
-    name: 'Javascript',
+    name: 'Javascript / Node.js',
     icon: Javascript,
   },
   {

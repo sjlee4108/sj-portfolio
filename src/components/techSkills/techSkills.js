@@ -6,7 +6,7 @@ const getTechStacks = (stacks) => {
     <div className={styles.techContainer}>
       {stack.icon()}
       <div className={styles.infoContainer}>
-        {stack.name}
+        <b>{stack.name}</b>
         <div className={styles.techBarContainer}>
           <div className={styles.filledTechBar} />
         </div>
