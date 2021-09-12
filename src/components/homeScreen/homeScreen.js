@@ -4,7 +4,7 @@ import Slider from '../sliders/slider';
 import TitleSection from '../titleSection/titleSection';
 import styles from './homeScreenStyles.scss';
 import { projects } from '../../constants/projects';
-import TechSkills from '../techSkills/techSkills';
+import SkillSection from '../skillSection/skillSection';
 import { techStacks } from '../../constants/skills';
 
 const Home = (props) => {
@@ -21,7 +21,7 @@ const Home = (props) => {
         />
       </BodySection>
       <BodySection title="Skills" id="skills" sectionRef={skillsRef}>
-        <TechSkills techStacks={techStacks} />
+        <SkillSection techStacks={techStacks} />
       </BodySection>
     </div>
   );

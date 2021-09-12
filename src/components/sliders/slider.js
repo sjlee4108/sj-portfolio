@@ -65,7 +65,7 @@ const Slider = (props) => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className={styles.container}>
+    <div data-aos="fade-up" className={styles.container}>
       <BsChevronCompactLeft className={styles.buttonLeft}
         onClick={() => {
           setReverse(!isReverse);

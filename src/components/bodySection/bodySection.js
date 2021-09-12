@@ -5,7 +5,7 @@ const BodySection = (props) => {
   const { title, id, sectionRef } = props;
   return (
     <section className={styles.bodyContainer} id={id} ref={sectionRef}>
-      <h3 className={styles.title}>{title}</h3>
+      <h3 data-aos="fade-up" className={styles.title}>{title}</h3>
       {props.children}
     </section>
   );

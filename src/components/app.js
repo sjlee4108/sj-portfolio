@@ -15,6 +15,7 @@ const App = (props) => {
     const aboutMeScroll = () => { console.log('testing'); aboutMeRef.current.scrollIntoView(); };
     const projectsScroll = () => projectsRef.current.scrollIntoView();
     const skillsScroll = () => skillsRef.current.scrollIntoView();
+
     return (
         <Router>
             <div>

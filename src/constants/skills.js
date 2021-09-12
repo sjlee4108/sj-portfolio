@@ -97,26 +97,32 @@ export const techStacks = [
   {
     name: 'Python / ROS',
     icon: Python,
+    weight: 0.9,
   },
   {
     name: 'React',
     icon: ReactIcon,
+    weight: 0.85,
   },
   {
     name: 'React-Native',
     icon: ReactNative,
+    weight: 0.75,
   },
   {
     name: 'HTML / CSS',
     icon: HTML,
+    weight: 0.8,
   },
   {
     name: 'Javascript / Node.js',
     icon: Javascript,
+    weight: 0.7,
   },
   {
     name: 'MATLAB',
     icon: Matlab,
+    weight: 0.6,
   },
 ];
 
