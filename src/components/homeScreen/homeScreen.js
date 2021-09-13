@@ -22,8 +22,8 @@ const Home = (props) => {
       </BodySection>
       <BodySection title="Skills" id="skills" sectionRef={skillsRef}>
         <div className={styles.skillContainer}>
-          <SkillSection techStacks={techStacks} />
-          <SkillSection techStacks={techStacks} />
+          <SkillSection skills={techStacks} skillType="tech" />
+          <SkillSection skills={techStacks} skillType="soft" />
         </div>
       </BodySection>
     </div>

@@ -15,12 +15,26 @@ const getTechStacks = (stacks) => {
   ));
 };
 
+const getSoftSkills = (skills) => {
+  return skills.map((skill) => (
+    <div data-aos="fade-left" className={styles.techContainer}>
+      {skill.icon()}
+      <div className={styles.infoContainer}>
+        <b>{skill.name}</b>
+        <div className={styles.techBarContainer}>
+          <div className={styles.filledTechBar} style={{ width: `calc(${skill.weight} * 100%)` }} />
+        </div>
+      </div>
+    </div>
+  ));
+};
+
 const SkillSection = (props) => {
-  const { techStacks } = props;
+  const { skills, skillType } = props;
   return (
-    <div data-aos="fade-right" className={styles.topContainer}>
-      <h5 className={styles.title}>Tech Stacks</h5>
-      {getTechStacks(techStacks)}
+    <div data-aos="fade-up" className={styles.topContainer}>
+      <h5 data-aos="fade-up" className={styles.title}>{skillType === 'tech' ? 'Tech Stacks' : 'Soft Skills'}</h5>
+      {skillType === 'tech' ? getTechStacks(skills) : getSoftSkills(skills)}
     </div>
   );
 };
