@@ -33,9 +33,9 @@ export const projects = {
       image: PT,
       imageOverflow: false,
       description: `
-        Positive Tracks is a non-profit organization that helps youth make social changes through physical activity.
-        As a senior capstone project, our team (4 dev) created a event platform webpage in which organizers can host/post an event, 
-        Positive Tracks admin can assist organizers, and participants can browse/join events.
+        Positive Tracks is a non-profit org that helps youth make social changes through physical activity.
+        Our capstone team (4 dev) created an event platform in which organizers can host/post an event, 
+        admins can assist organizers, and participants can join events.
         `.replace(/\n/g, ' '),
       bullets: [
         'Designed webpage prototype. Reiterated based on feedbacks from sponsor and past users',
