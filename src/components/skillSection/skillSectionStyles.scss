@@ -1,6 +1,6 @@
 .topContainer{
   width: 25em;
-  height: 38em;
+  height: 37em;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -8,17 +8,17 @@
   box-sizing: border-box;
   transition: background-color 0.50s linear;
   background-color: var(--theme-skill-background);
-  padding-top: 1em;
+  padding-top: 0.8em;
   padding-bottom: .5em;
 }
 .title{
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
+  font-size: 1.4em;
+  margin-bottom: 1em;
   letter-spacing: 0.05em;
 }
 .techContainer{
   width: 22em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.4em;
   box-sizing: border-box;
   padding: 8px 8px 7px 8px;
   display: flex;
