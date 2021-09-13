@@ -9,18 +9,18 @@ html,body{
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
-    width: 0.5em;
-}
-body::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #781b23 11.98%, #073873 94.79%);
-    border-radius: 0.5em;
-    height:30px;
-}
-body::-webkit-scrollbar-track-piece
-{
-    background-color: var(--theme-page-background);
-}
+// body::-webkit-scrollbar {
+//     width: 0.5em;
+// }
+// body::-webkit-scrollbar-thumb {
+//     background: linear-gradient(180deg, #781b23 11.98%, #073873 94.79%);
+//     border-radius: 0.5em;
+//     height:30px;
+// }
+// body::-webkit-scrollbar-track-piece
+// {
+//     background-color: var(--theme-page-background);
+// }
 
 * {
     margin: 0;

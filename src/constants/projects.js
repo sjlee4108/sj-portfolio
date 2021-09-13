@@ -33,15 +33,15 @@ export const projects = {
       image: PT,
       imageOverflow: false,
       description: `
-        Positive Tracks is a non-profit org that helps youth make social changes through physical activity.
+        Positive Tracks(PT) is a non-profit org that helps youth make social changes through physical activity.
         Our capstone team (4 dev) created an event platform in which organizers can host/post an event, 
         admins can assist organizers, and participants can join events.
         `.replace(/\n/g, ' '),
       bullets: [
         'Designed webpage prototype. Reiterated based on feedbacks from sponsor and past users',
-        'Created dashboards(organizer, admin), homepage, event signup page, and event info page and highly reusable components that go with it (buttons, tabs, textboxes ...)',
+        'Created dashboards, homepage, and event pages and highly reusable components(buttons, tabs ...)',
         'Received positive feedbacks from Positive Tracks and past user on the beta version',
-        'Full version expected to be released from Positive Tracks'],
+        'Full version expected to be released from PT'],
     },
     {
       title: 'Dynamic Navigation System for Indoor Robots',
@@ -69,10 +69,10 @@ export const projects = {
       the inability of a person to determine his true body position, motion, and altitude relative to the earth, in circular motions. 
       `.replace(/\n/g, ' '),
       bullets: [
-      'Studied the pre-existing MATLAB codebase and modified it to provide additional visualizations and simulate under different variables',
-      'Studied research papers of conducted experiments of spatial disorientation and applied our model to explain the result of these experiments',
-      'Collect data for the accident of Kobe Bryant and simulate the crash under the given condition. Simulation shown in the video',
-      'Work presented at the Vestibular-Oriented Research Meeting 2021, an international meeting hosted remotely by Ohio State University.'],
+      'Studied the MATLAB research codebase and modified it to provide more visualizations and simulations under different variables',
+      'Studied research papers of conducted experiments of spatial disorientation and applied our model to the result',
+      'Collect data for the accident of Kobe Bryant and simulate the crash under the given condition. (Image)',
+      'Work presented in Vestibular-Oriented Research Meeting 2021'],
     },
 
   ],
