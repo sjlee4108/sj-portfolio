@@ -10,5 +10,12 @@
   flex-direction: row;
   width: 100%;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+}
+
+@media (max-width: 64em){
+  .skillContainer{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
