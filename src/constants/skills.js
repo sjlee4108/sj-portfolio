@@ -134,7 +134,13 @@ export const softSkills = [
     title: 'Teamwork',
   },
   {
-    title: 'Teamwork',
+    title: 'Detail-oriented',
+  },
+  {
+    title: 'Bilingual',
+  },
+  {
+    title: 'Self/fast learner',
   },
 
 ];

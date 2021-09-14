@@ -31,7 +31,7 @@ export const projects = {
       tags: ['React', 'Figma', 'Redux'],
       term: 'Fall 2020 - Winter 2021',
       image: PT,
-      imageOverflow: false,
+      imageOverflow: true,
       description: `
         Positive Tracks(PT) is a non-profit org that helps youth make social changes through physical activity.
         Our capstone team (4 dev) created an event platform in which organizers can host/post an event, 
@@ -40,7 +40,7 @@ export const projects = {
       bullets: [
         'Designed webpage prototype. Reiterated based on feedbacks from sponsor and past users',
         'Created dashboards, homepage, and event pages and highly reusable components(buttons, tabs ...)',
-        'Received positive feedbacks from Positive Tracks and past user on the beta version',
+        'Received positive feedbacks from Positive Tracks and past user on the beta',
         'Full version expected to be released from PT'],
     },
     {
