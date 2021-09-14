@@ -13,7 +13,7 @@ const setDark = () => {
 
 const setLight = () => {
   const bodyStyles = document.body.style;
-  bodyStyles.setProperty('--theme-color', 'rgb(0, 0, 80)');
+  bodyStyles.setProperty('--theme-color', 'rgb(0, 0, 70)');
   bodyStyles.setProperty('--theme-page-background', '#e1f4ff');
   bodyStyles.setProperty('--theme-navbar-background', 'rgba(240, 248, 255, 0.9)');
   bodyStyles.setProperty('--theme-section-background', 'whitesmoke');

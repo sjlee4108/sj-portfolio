@@ -11,7 +11,7 @@ export const projects = {
     {
       title: 'Vitalize: Wellness App for Clinician',
       position: 'Full-Stack Intern',
-      tags: ['React-Native', 'Redux', 'Node.js', 'MongoDB'],
+      tags: ['React-Native', 'Node.js', 'MongoDB'],
       term: 'Spring 2021 - Summer 2021',
       image: Vitalize,
       imageOverflow: true,
@@ -47,7 +47,7 @@ export const projects = {
       title: 'Dynamic Navigation System for Indoor Robots',
       position: 'Research Assistant',
       term: 'Summer 2019 - Fall 2019',
-      tags: ['Research', 'Robotics', 'ROS', 'Python'],
+      tags: ['Research', 'Robotics', 'ROS/Python'],
       image: RobotImage2,
       imageOverflow: false,
       description: 'hi2',
@@ -61,7 +61,7 @@ export const projects = {
     {
       title: 'Spatial Disorientation in Circular Motions',
       position: 'Research Assistant',
-      tags: ['Research', 'Mathematical Modeling', 'MATLAB'],
+      tags: ['Research', 'Math Modeling', 'MATLAB'],
       image: ImageVid,
       imageOverflow: false,
       term: 'Fall 2019 - Spring 2020',
