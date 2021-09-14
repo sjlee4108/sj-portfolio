@@ -127,5 +127,14 @@ export const techStacks = [
 ];
 
 export const softSkills = [
+  {
+    title: 'Communication',
+  },
+  {
+    title: 'Teamwork',
+  },
+  {
+    title: 'Teamwork',
+  },
 
 ];

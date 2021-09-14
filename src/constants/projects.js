@@ -56,7 +56,7 @@ export const projects = {
         'Upgraded the robot(turtlebot2) to use LIDAR instead of Xbox Kinect and modified the codebase',
         'Created maps of real-environments using SLAM and simulation environment using Gazebo',
         'Debugged the current system and improved the performance using Rviz',
-        'Work Presented at Colby Undergraduate Summer Research Retreat'],
+        'Work presented at Colby Undergraduate Summer Research Retreat'],
     },
     {
       title: 'Spatial Disorientation in Circular Motions',
@@ -72,7 +72,7 @@ export const projects = {
       'Studied the MATLAB research codebase and modified it to provide more visualizations and simulations under different variables',
       'Studied research papers of conducted experiments of spatial disorientation and applied our model to the result',
       'Collect data for the accident of Kobe Bryant and simulate the crash under the given condition. (Image)',
-      'Work presented in Vestibular-Oriented Research Meeting 2021'],
+      'Work presented at Vestibular-Oriented Research Meeting 2021'],
     },
 
   ],
