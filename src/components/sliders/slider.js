@@ -28,10 +28,14 @@ const getSliderDots = (index, total, reverse, setIndex) => {
   );
 };
 
-const getTags = (tags) => {
+const getTags = (tags, position, term) => {
   return (
     <div className={styles.tagsContainer}>
         {tags.map((tag) => <Tag value={tag} />)}
+        <div className={styles.positionContainer}>
+          <i>{position}</i>
+          <i>{term}</i>
+        </div>
     </div>
   );
 };
@@ -41,13 +45,13 @@ return bullets.map((bullet) => <li>{bullet}</li>);
 };
 
 const getTextSection = (contents, reverse, index, setIndex) => {
-  const { title, description, tags, bullets } = contents[index];
+  const { title, description, tags, bullets, term, position } = contents[index];
   return (
     <div className={[styles.textSection, reverse ? styles.reversedTextSection : ''].join(' ')}>
       <div className={styles.textInnerSection}>
       <h4 className={styles.title}>{title}</h4>
       <div className={styles.spacing} />
-      {getTags(tags)}
+      {getTags(tags, position, term)}
       <div className={styles.spacing} />
       <p className={styles.descriptionText}> {description}</p>
       <div className={styles.spacing} />

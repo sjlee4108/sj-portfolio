@@ -10,8 +10,8 @@ export const projects = {
   english: [
     {
       title: 'Vitalize: Wellness App for Clinician',
-      position: 'Full-Stack Developer Intern',
-      tags: ['React Native', 'Redux', 'Node.js', 'MongoDB'],
+      position: 'Full-Stack Intern',
+      tags: ['React-Native', 'Redux', 'Node.js', 'MongoDB'],
       term: 'Spring 2021 - Summer 2021',
       image: Vitalize,
       imageOverflow: true,
@@ -64,6 +64,7 @@ export const projects = {
       tags: ['Research', 'Mathematical Modeling', 'MATLAB'],
       image: ImageVid,
       imageOverflow: false,
+      term: 'Fall 2019 - Spring 2020',
       description: `
       As a research intern for Prof. Jan Holly, I worked on building a differential equation model that simulates a brain’s spatial disorientation,
       the inability of a person to determine his true body position, motion, and altitude relative to the earth, in circular motions. 

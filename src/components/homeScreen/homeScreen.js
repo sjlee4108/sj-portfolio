@@ -5,7 +5,7 @@ import TitleSection from '../titleSection/titleSection';
 import styles from './homeScreenStyles.scss';
 import { projects } from '../../constants/projects';
 import SkillSection from '../skillSection/skillSection';
-import { techStacks } from '../../constants/skills';
+import { techStacks, softSkills } from '../../constants/skills';
 
 const Home = (props) => {
   const { aboutMeRef, projectsRef, skillsRef } = props;
@@ -23,7 +23,7 @@ const Home = (props) => {
       <BodySection title="Skills" id="skills" sectionRef={skillsRef}>
         <div className={styles.skillContainer}>
           <SkillSection skills={techStacks} skillType="tech" />
-          <SkillSection skills={techStacks} skillType="soft" />
+          <SkillSection skills={softSkills} skillType="soft" />
         </div>
       </BodySection>
     </div>

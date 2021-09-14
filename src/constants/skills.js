@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
+import { RiBookOpenLine, RiGlobalLine, RiPhoneFindLine, RiTeamLine, RiWechatLine } from 'react-icons/ri';
 import MatlabImg from '../assets/matlab.png';
 
 const Javascript = () => {
@@ -126,21 +127,33 @@ export const techStacks = [
   },
 ];
 
+const iconStyle = { width: '2em', height: '2em' };
+
 export const softSkills = [
   {
     title: 'Communication',
+    icon: () => <RiWechatLine style={iconStyle} />,
+    description: 'Engaged in projects that involve communication with diverse groups of people (students, sponsors, user, and prof).',
   },
   {
     title: 'Teamwork',
+    icon: () => <RiTeamLine style={iconStyle} />,
+    description: 'Involved in group projects and researches. Experience with Slack, Github, Jira etc..',
   },
   {
     title: 'Detail-oriented',
+    icon: () => <RiPhoneFindLine style={iconStyle} />,
+    description: 'Likes to focus on small details that enhances user experience. (spacing, size, color etc..)',
   },
   {
     title: 'Bilingual',
+    icon: () => <RiGlobalLine style={iconStyle} />,
+    description: 'Fluent in Korean and English',
   },
   {
     title: 'Self/fast learner',
+    icon: () => <RiBookOpenLine style={iconStyle} />,
+    description: 'Self-studied different frameworks such as ROS and React through online resources. Currently, studying Java Spring',
   },
 
 ];

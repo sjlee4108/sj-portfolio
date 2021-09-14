@@ -157,6 +157,21 @@
 .tagsContainer{
   display: flex;
   flex-direction: row;
+  width: '100%';
+  align-items: center;
+
+  i{
+    font-size: 0.7em;
+    margin-bottom: 0.2em;
+  }
+}
+
+.positionContainer{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
 .filledDot{

@@ -26,6 +26,40 @@
   flex-direction: row;
 }
 
+.softTopContainer{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 1em;
+}
+
+.softContainer{
+  width: 22em;
+  display: flex;
+  flex-direction: row;
+
+  b{
+    display: flex;
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    opacity: 0.9;
+  }
+
+  p{
+    font-size: 0.75em;
+    opacity: 0.5;
+  }
+}
+
+.softDescriptionContainer{
+  padding-left: 2em;
+  flex: 1;
+  flex-direction: column;
+}
+
 .infoContainer{
   display: flex;
   flex: 1;
