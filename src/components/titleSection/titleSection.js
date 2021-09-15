@@ -34,22 +34,36 @@ const getCup = () => {
 const getLight = () => {
   return (
     <div className={styles.lightContainer}>
-      <div className={styles.firstLightHolder} />
       <div className={styles.secondLightHolder} />
-      <div className={styles.thirdLightHolder} />
+      <div className={styles.firstLightHolder}>
+        <div className={styles.firstLightConnector} />
+      </div>
       <div className={styles.mainBottom} />
-      <div className={styles.mainTop} />
+      <div className={styles.mainTop}>
+        <div className={styles.secondLightConnector} />
+      </div>
       <div className={styles.lightblub} />
+      <div className={styles.lightTrapezoid} />
     </div>
   );
 };
 
-const getAnimatedSection = () => {
+const getWorkSection = () => {
   return (
     <div className={styles.animationSection}>
       {getLaptop()}
       {getTable()}
       {getCup()}
+      {getLight()}
+    </div>
+  );
+};
+
+const getBoardSection = (name, description) => {
+  return (
+    <div className={styles.textContainer}>
+        <h1>{`Hi, I am ${name}`}</h1>
+        <h2>{description}</h2>
     </div>
   );
 };
@@ -58,11 +72,8 @@ const TitleSection = (props) => {
   const { name, description } = props;
   return (
     <div className={styles.container}>
-      <div className={styles.textContainer}>
-        <h1>{`Hi, I am ${name}`}</h1>
-        <h2>{description}</h2>
-      </div>
-     {getAnimatedSection()}
+     {getBoardSection(name, description)}
+     {getWorkSection()}
     </div>
   );
 };

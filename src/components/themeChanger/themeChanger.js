@@ -12,6 +12,9 @@ const setDark = () => {
   bodyStyles.setProperty('--theme-slider-background-1', 'rgb(55, 60, 55)');
   bodyStyles.setProperty('--theme-slider-background-2', '#1f292a');
   bodyStyles.setProperty('--theme-skill-background', '#1f292a');
+  bodyStyles.setProperty('--theme-object-opacity', '0.7');
+  bodyStyles.setProperty('--theme-light-color', 'rgba(255, 255, 255, 0.35)');
+  bodyStyles.setProperty('--theme-bulb-color', 'white');
 };
 
 const setLight = () => {
@@ -23,6 +26,9 @@ const setLight = () => {
   bodyStyles.setProperty('--theme-slider-background-2', 'rgb(240, 255, 255)');
   bodyStyles.setProperty('--theme-slider-background-1', 'rgb(245, 250, 250)');
   bodyStyles.setProperty('--theme-skill-background', 'rgb(245, 255, 255)');
+  bodyStyles.setProperty('--theme-object-opacity', '1');
+  bodyStyles.setProperty('--theme-light-color', 'transparent');
+  bodyStyles.setProperty('--theme-bulb-color', 'lightgray');
 };
 
 const ThemeChanger = () => {

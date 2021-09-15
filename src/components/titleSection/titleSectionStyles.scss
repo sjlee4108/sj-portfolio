@@ -8,27 +8,31 @@ $desk_width: 40em;
   flex-direction: row;
   position: relative;
   margin-bottom: 4em;
+
+  h1{
+    font-family: 'Caveat';
+  }
+  h2{
+    font-family: 'Caveat';
+  }
 }
 
-.textContainer{
-  height: 80%;
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 3em;
+.boardContainer{
+  position: absolute;
+  height: 100%;
+  width: 30em;
+  background-color: honeydew;
+  left: 1em;
 }
 
 .animationSection{
-  // position: absolute;
-  // bottom: 0;
-  // right: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
-  width: 41em;
+  width: $desk_width + 1em;
   height: 100%;
-  position: relative;
 }
 
 .table{
@@ -42,6 +46,8 @@ $desk_width: 40em;
   border-radius: 0.5em 0.5em 0em 0em;
   display: flex;
   justify-content: flex-end;
+  opacity: var(--theme-object-opacity);
+  transition: opacity 0.5s linear;
 }
 
 .tableSide{
@@ -78,6 +84,7 @@ $desk_width: 40em;
   position: absolute;
   bottom: $desk_height - .3em;
   z-index: 2;
+ 
 }
 
 .laptopScreen{
@@ -105,6 +112,8 @@ $desk_width: 40em;
   display: flex;
   flex-direction: row;
   align-items: center;
+  opacity: var(--theme-object-opacity);
+  transition: opacity 0.5s linear;
 }
 
 .trapezoid {
@@ -124,3 +133,104 @@ $desk_width: 40em;
   right: -0.5em;
   transform: rotate(5deg);
 }
+
+.lightContainer{
+  width: 25em;
+  height: 25em;
+  position: absolute;
+  bottom: $desk_height;
+  right: 4em;
+  opacity: var(--theme-object-opacity);
+  transition: opacity 0.5s linear;
+  z-index: 2000;
+}
+
+.mainBottom{
+  width: 6em;
+  height: 0.6em;
+  background-color: gray;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.firstLightHolder{
+  width: 0.8em;
+  height: 12em;
+  border: solid 0.35em gray;
+  border-radius: 1em;
+  position: absolute;
+  bottom: 0em;
+  right: 1.5em;
+  transform: rotate(10deg);
+  transform-origin: 50% 100%;
+  box-sizing: border-box;
+}
+
+.firstLightConnector{
+  width: 0.5em;
+  height: 0.5em;
+  background-color: rgb(70, 70, 70);
+  border-radius: 0.6em;
+  position: absolute;
+  right: -0.2em;
+  top: -0.1em;
+}
+
+.secondLightConnector{
+  width: 0.5em;
+  height: 0.5em;
+  background-color: rgb(70, 70, 70);
+  border-radius: 0.6em;
+  position: absolute;
+  right: 0em;
+  top: 0.2em;
+}
+
+.secondLightHolder{
+  width: 0.8em;
+  height: 15em;
+  border: solid 0.35em gray;
+  border-radius: 1em;
+  position: absolute;
+  bottom: 11.2em;
+  right: -0.8em;
+  transform: rotate(-60deg);
+  transform-origin: 50% 100%;
+  box-sizing: border-box;
+}
+
+.mainTop{
+  width: 9em;
+  height: 0.8em;
+  background-color: gray;
+  position: absolute;
+  bottom: 18.15em;
+  right: 12em;
+  border-radius: 0em 1em 1em 0em;
+}
+.lightblub{
+  width: 8em;
+  height: 0.2em;
+  background-color: var(--theme-bulb-color);
+  position: absolute;
+  bottom: 17.95em;
+  right: 12.8em;
+  border-radius: 0em 0em 1em 1em;
+  transition: background-color 0.5s linear;
+  transition-delay: 0.6s;
+}
+
+.lightTrapezoid{
+  border-bottom: 18.1em solid var(--theme-light-color);
+  border-left: 12em solid transparent;
+  border-right: 12em solid transparent;
+  height: 0;
+  width: 8em;
+  position: absolute;
+  bottom: 0em;
+  right: 0.8em;
+  transition: border-color 0.5s linear;
+  transition-delay: 0.6s;
+}
+
