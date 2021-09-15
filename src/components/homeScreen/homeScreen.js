@@ -11,7 +11,7 @@ const Home = (props) => {
   const { aboutMeRef, projectsRef, skillsRef } = props;
   return (
     <div className={styles.container}>
-      <TitleSection name="Seungjae Lee" description="Idk what i want with life" />
+      <TitleSection name="Seungjae Lee" description="Welcome to my dev world!" />
       <BodySection title="About Me" id="aboutme" sectionRef={aboutMeRef}>
         Hi
       </BodySection>

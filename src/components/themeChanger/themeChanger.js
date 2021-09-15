@@ -27,7 +27,7 @@ const setLight = () => {
   bodyStyles.setProperty('--theme-slider-background-1', 'rgb(245, 250, 250)');
   bodyStyles.setProperty('--theme-skill-background', 'rgb(245, 255, 255)');
   bodyStyles.setProperty('--theme-object-opacity', '1');
-  bodyStyles.setProperty('--theme-light-color', 'transparent');
+  bodyStyles.setProperty('--theme-light-color', 'rgba(0, 0, 0, 0)');
   bodyStyles.setProperty('--theme-bulb-color', 'lightgray');
 };
 

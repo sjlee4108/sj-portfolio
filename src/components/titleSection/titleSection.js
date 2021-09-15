@@ -61,9 +61,21 @@ const getWorkSection = () => {
 
 const getBoardSection = (name, description) => {
   return (
-    <div className={styles.textContainer}>
-        <h1>{`Hi, I am ${name}`}</h1>
-        <h2>{description}</h2>
+    <div className={styles.boardContainer}>
+        <div className={styles.boardConnectorContainer}>
+          <div className={styles.boardConnectorLeft} />
+          <div className={styles.boardConnectorRight} />
+        </div>
+        <div className={styles.boardMiddleHolder} />
+        <div className={styles.boardBottomHolder} />
+        <div className={styles.markerHolder}>
+          <div className={styles.bluePen} />
+          <div className={styles.eraser} />
+        </div>
+        <div data-aos="flip-down" className={styles.board}>
+          <h1>{`Hi, I am ${name}`}</h1>
+          <h2>{description}</h2>
+        </div>
     </div>
   );
 };
