@@ -5,7 +5,8 @@
   justify-content: flex-start;
   flex-direction: column;
   box-sizing: border-box;
-  min-height: calc(100vh + 5em);
+  min-height: 100vh;
+  margin-bottom: 4em;
   padding: 0.8em 1em 3em 1em;
   transition: background-color 0.50s linear;
 }
