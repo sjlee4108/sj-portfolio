@@ -1,6 +1,8 @@
 // import ROSImage from '../assets/error.png';
 import RobotImage2 from '../assets/robot2.jpeg';
 import ImageVid from '../assets/version1.gif';
+import ImageVidENGS21 from '../assets/engs21.gif';
+import CS52Img from '../assets/cs52.png';
 import Vitalize from '../assets/2smartphones.png';
 import PT from '../assets/PT.png';
 
@@ -28,7 +30,7 @@ export const projects = {
     {
       title: 'Positive Tracks: Event Platform for Youth Activism',
       position: 'Designer & Front-end',
-      tags: ['React', 'Figma', 'Redux'],
+      tags: ['React', 'Figma', 'ENGS 89/90'],
       term: 'Fall 2020 - Winter 2021',
       image: PT,
       imageOverflow: true,
@@ -50,7 +52,10 @@ export const projects = {
       tags: ['Research', 'Robotics', 'ROS/Python'],
       image: RobotImage2,
       imageOverflow: false,
-      description: 'hi2',
+      description: `
+      As a research assistant for Prof. Eric Aaron, I worked on dynamic robot navigation for indoor environment, 
+      a system which guides a robot to a target location based on local obstacles.
+      `.replace(/\n/g, ' '),
       bullets: [
         'Self-studied ROS framework and applied it to build a simple obstacle avoidance.',
         'Upgraded the robot(turtlebot2) to use LIDAR instead of Xbox Kinect and modified the codebase',
@@ -66,7 +71,7 @@ export const projects = {
       imageOverflow: false,
       term: 'Fall 2019 - Spring 2020',
       description: `
-      As a research intern for Prof. Jan Holly, I worked on building a differential equation model that simulates a brain’s spatial disorientation,
+      As a research assistant for Prof. Jan Holly, I worked on building a differential equation model that simulates a brain’s spatial disorientation,
       the inability of a person to determine his true body position, motion, and altitude relative to the earth, in circular motions. 
       `.replace(/\n/g, ' '),
       bullets: [
@@ -74,6 +79,42 @@ export const projects = {
       'Studied research papers of conducted experiments of spatial disorientation and applied our model to the result',
       'Collect data for the accident of Kobe Bryant and simulate the crash under the given condition. (Image)',
       'Work presented at Vestibular-Oriented Research Meeting 2021'],
+    },
+    {
+      title: 'Pipe-bust Prevention System',
+      position: 'Group Member',
+      tags: ['ENGS 21', 'Arduino', 'CAD Design'],
+      image: ImageVidENGS21,
+      imageOverflow: false,
+      term: 'Winter 2019',
+      description: `
+      For ENGS 21 project, our group aimed to prevent pipe burst damages of vactional homes. As our solution, we built a battery powered pipe freeze monitoring system 
+      that emails the user warning them of a potential freeze, and then drains their pipes preventing damages from bursts. 
+      `.replace(/\n/g, ' '),
+      bullets: [
+      'Conducted research on the cause of pipe freezes, explored different solutions and asked for advice from pipe experts',
+      'Wrote the codebase for running motors and reading temperature on Arduino',
+      'CAD designed rack & pinion, relevant holders and temperature system container',
+      'Work selected to present for Thayer open house'],
+    },
+    {
+      title: 'CS 52: Full-Stack Web Development & Personal Web projects',
+      position: 'Individual',
+      tags: ['ENGS 21', 'Arduino', 'CAD Design'],
+      image: CS52Img,
+      imageOverflow: true,
+      term: 'Spring 2021',
+      description: `
+      The following items are projects from CS 52 and personal web projects pursued after:
+      `.replace(/\n/g, ' '),
+      bullets: [
+      'Lab 1: K-hiphop community landing page(only HTML & CSS)',
+      'Lab 2: Drink buzzfeed quiz(Javascript)',
+      'Lab 3: Live-editing note page(React, Firebase)',
+      'Lab 4, 5: Linksharing page(Full-stack, React, Node.js, MongoDB)',
+      'DartConnect: SNS page for school, followed instagram design (React, Firebase)',
+      'Portfolio Page: Personal page with projects, skills(React)',
+      ],
     },
 
   ],

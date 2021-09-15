@@ -6,7 +6,7 @@ const setDark = () => {
   bodyStyles.setProperty('--theme-page-background', '#2a3638');
   bodyStyles.setProperty('--theme-navbar-background', 'rgba(34, 34, 34, 0.9)');
   bodyStyles.setProperty('--theme-section-background', 'rgb(80, 80, 80)');
-  bodyStyles.setProperty('--theme-slider-background-1', 'rgb(20, 20, 20)');
+  bodyStyles.setProperty('--theme-slider-background-1', 'rgb(15, 15, 30)');
   bodyStyles.setProperty('--theme-slider-background-2', 'rgb(45, 45, 40)');
   bodyStyles.setProperty('--theme-skill-background', '#1f292a');
 };
