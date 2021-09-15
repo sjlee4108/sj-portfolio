@@ -1,8 +1,96 @@
+$desk_height: 6em;
+$desk_width: 40em;
+
 .container{
   width: 100%;
   height: calc(100vh - 5em);
   display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.textContainer{
+  height: 80%;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 3em;
+}
+
+.animationSection{
+  // position: absolute;
+  // bottom: 0;
+  // right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 40em;
+  height: 100%;
+}
+
+.table{
+  height: $desk_height;
+  width: $desk_width;
+  bottom: 0;
+  position: absolute;
+  border: solid wheat;
+  border-width: 1.7em 0em 0em 1.5em;
+  box-sizing: border-box;
+  border-radius: 0.5em 0.5em 0em 0em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tableSide{
+  width: 15em;
+  background-color: wheat;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tableCabinet{
+  width: 13em;
+  height: 3.5em;
+  background-color: green;
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.tableHolder{
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  background-color: greenyellow;
+}
+
+.laptopContainer{
+  display: flex;
+  width: 18em;
   flex-direction: column;
+  align-items: center;
+  padding-left: 2em;
+  position: absolute;
+  bottom: $desk_height - .3em;
+  z-index: 2;
+}
+
+.laptopScreen{
+  width: 14em;
+  height: 8em;
+  border:solid black;
+  border-width: 0.8em 0.8em;
+  border-radius: 0.8em 0.8em 0 0;
+  box-sizing: border-box;
+  background-color: darkslategray;
+}
+
+.laptopBottom{
+  width: 16.5em;
+  height: 0.8em;
+  border-radius: 100%/0 0 0.8em 0.8em;
+  background-color: rgb(149, 149, 149);
 }

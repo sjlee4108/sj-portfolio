@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import Switch from 'react-switch';
+import { RiMoonClearLine, RiSunLine } from 'react-icons/ri';
+import styles from './themeChangerStyles.scss';
 
 const setDark = () => {
   const bodyStyles = document.body.style;
@@ -47,8 +50,22 @@ const ThemeChanger = () => {
   }, []);
 
   return (
-    <div>
-      <button type="button" onClick={handleChange}>{themeState ? 'Light Mode' : 'Dark Mode'}</button>
+    <div className={styles.themeChangeContainer}>
+      <Switch
+        onChange={handleChange}
+        checked={themeState}
+        onColor="#222"
+        offColor="#ddd"
+        onHandleColor="#444"
+        uncheckedIcon={false}
+        checkedIcon={false}
+        height={25}
+        width={50}
+        checkedHandleIcon={<RiMoonClearLine style={{ display: 'flex', margin: '4px', width: 'calc(100% - 8px)', height: 'calc(100% - 8px)', alignItems: 'center', justifyContent: 'center' }} />}
+        uncheckedHandleIcon={<RiSunLine style={{ display: 'flex', margin: '4px', width: 'calc(100% - 8px)', height: 'calc(100% - 8px)', alignItems: 'center', justifyContent: 'center' }} />}
+        activeBoxShadow="0 0 2px 3px currentColor"
+      />
+      <small>{themeState ? 'Dark Mode' : 'Light Mode'}</small>
     </div>
   );
 };
