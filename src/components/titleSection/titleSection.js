@@ -17,6 +17,9 @@ const getTable = () => {
         <div className={styles.tableCabinet}>
           <div className={styles.tableHolder} />
         </div>
+        <div className={styles.tableCabinet}>
+          <div className={styles.tableHolder} />
+        </div>
       </div>
     </div>
   );
@@ -69,6 +72,7 @@ const getBoardSection = (name, description) => {
         <div className={styles.boardMiddleHolder} />
         <div className={styles.boardBottomHolder} />
         <div className={styles.markerHolder}>
+          <div className={styles.blackPen} />
           <div className={styles.bluePen} />
           <div className={styles.eraser} />
         </div>

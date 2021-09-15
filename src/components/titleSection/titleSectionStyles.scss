@@ -1,9 +1,9 @@
-$desk_height: 6em;
+$desk_height:11em;
 $desk_width: 40em;
 
 .container{
   width: 100%;
-  height: max(35em, calc(100vh - 5em));
+  height: max(40em, 100vh);
   display: flex;
   flex-direction: row;
   position: relative;
@@ -24,7 +24,7 @@ $desk_width: 40em;
 
 .boardBottomHolder{
   width: 100%;
-  height: 5.5em;
+  height: 10.5em;
   border-width: .8em .6em 0em .6em;
   border-color: silver;
   border-style: solid;
@@ -67,7 +67,7 @@ $desk_width: 40em;
   height: 18em;
   background-color: white;
   left: 1.5em;
-  bottom: 11em;
+  bottom: 16em;
   box-sizing: border-box;
   border: solid silver 0.5em;
   border-radius: 0.3em;
@@ -91,33 +91,40 @@ $desk_width: 40em;
 }
 
 .markerHolder{
-  width: 29em;
-  height: 0.5em;
+  width: 28.9em;
+  height: 0.55em;
   background-color: rgb(84, 84, 84);
   position: absolute;
-  left: 0.5em;
-  bottom: 5.5em;
+  left: 0.55em;
+  bottom: 10.5em;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   overflow: visible;
 }
 
-.bluePen{
-  width: 2em;
+.blackPen{
+  width: 2.5em;
   height: 0.25em;
   background-color: whitesmoke;
-  border: solid green 0.15;
-  border-width: 0 3em 0em 0em;
+  border-left: solid black 0.5em;
   box-sizing: border-box;
-  margin: 0em 3em;
+}
+
+.bluePen{
+  width: 2.5em;
+  height: 0.25em;
+  background-color: whitesmoke;
+  border-left: solid blue 0.5em;
+  box-sizing: border-box;
+  margin: 0em 3em 0em 2em;
 }
 
 .eraser{
   width: 3em;
-  border-width: 2em 0em .1em 0em;
-  border-top: solid lightskyblue;
-  border-bottom: solid black;
+  border-top: solid lightskyblue .7em;
+  border-bottom: solid black .45em;
+  margin-right: 2em;
 }
 
 
@@ -162,6 +169,7 @@ $desk_width: 40em;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1em;
 }
 
 .tableHolder{
@@ -187,8 +195,8 @@ $desk_width: 40em;
   width: 14em;
   height: 8em;
   border:solid black;
-  border-width: 0.8em 0.8em;
-  border-radius: 0.8em 0.8em 0 0;
+  border-width: 0.6em 0.6em;
+  border-radius: 0.6em 0.6em 0 0;
   box-sizing: border-box;
   background-color: darkslategray;
 }
