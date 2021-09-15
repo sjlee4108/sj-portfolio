@@ -6,7 +6,7 @@ import ThemeChanger from '../themeChanger/themeChanger';
 const getLogoSection = () => {
   return (
     <div className={styles.logoSectionContainer}>
-      {text.logo}
+      {text.logo()}
       <ThemeChanger />
     </div>
   );
