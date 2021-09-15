@@ -22,11 +22,34 @@ const getTable = () => {
   );
 };
 
+const getCup = () => {
+  return (
+    <div className={styles.coffeeContainer}>
+      <div className={styles.trapezoid} />
+      <div className={styles.cupHolder} />
+    </div>
+  );
+};
+
+const getLight = () => {
+  return (
+    <div className={styles.lightContainer}>
+      <div className={styles.firstLightHolder} />
+      <div className={styles.secondLightHolder} />
+      <div className={styles.thirdLightHolder} />
+      <div className={styles.mainBottom} />
+      <div className={styles.mainTop} />
+      <div className={styles.lightblub} />
+    </div>
+  );
+};
+
 const getAnimatedSection = () => {
   return (
     <div className={styles.animationSection}>
       {getLaptop()}
       {getTable()}
+      {getCup()}
     </div>
   );
 };

@@ -7,6 +7,7 @@ $desk_width: 40em;
   display: flex;
   flex-direction: row;
   position: relative;
+  margin-bottom: 4em;
 }
 
 .textContainer{
@@ -25,8 +26,9 @@ $desk_width: 40em;
   // right: 0;
   display: flex;
   flex-direction: column;
-  width: 40em;
+  width: 41em;
   height: 100%;
+  position: relative;
 }
 
 .table{
@@ -93,4 +95,32 @@ $desk_width: 40em;
   height: 0.8em;
   border-radius: 100%/0 0 0.8em 0.8em;
   background-color: rgb(149, 149, 149);
+}
+
+
+.coffeeContainer{
+  position: absolute;
+  left: 22em;
+  bottom: $desk_height;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.trapezoid {
+  border-top: 3em solid red;
+  border-left: 0.4em solid transparent;
+  border-right: 0.4em solid transparent;
+  height: 0;
+  width: 1.5em;
+}
+.cupHolder{
+  width: 1em;
+  height: 0.8em;
+  border: solid red;
+  border-width: 0.2em 0.2em 0.2em 0em;
+  border-radius: 0.5em;
+  position: absolute;
+  right: -0.5em;
+  transform: rotate(5deg);
 }

@@ -5,7 +5,7 @@
   justify-content: flex-start;
   flex-direction: column;
   box-sizing: border-box;
-  min-height: 105vh;
+  min-height: calc(100vh + 5em);
   padding: 0.8em 1em 3em 1em;
   transition: background-color 0.50s linear;
 }

@@ -9,8 +9,8 @@ const setDark = () => {
   bodyStyles.setProperty('--theme-page-background', '#2a3638');
   bodyStyles.setProperty('--theme-navbar-background', 'rgba(34, 34, 34, 0.9)');
   bodyStyles.setProperty('--theme-section-background', 'rgb(80, 80, 80)');
-  bodyStyles.setProperty('--theme-slider-background-1', 'rgb(55, 70, 55)');
-  bodyStyles.setProperty('--theme-slider-background-2', 'rgb(40, 35, 35)');
+  bodyStyles.setProperty('--theme-slider-background-1', 'rgb(55, 60, 55)');
+  bodyStyles.setProperty('--theme-slider-background-2', '#1f292a');
   bodyStyles.setProperty('--theme-skill-background', '#1f292a');
 };
 
