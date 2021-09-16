@@ -35,7 +35,7 @@ const SkillSection = (props) => {
   const { skills, skillType } = props;
   return (
     <div data-aos="fade-up" className={styles.topContainer}>
-      <h5 data-aos="fade-up" className={styles.title}>{skillType === 'tech' ? 'Tech Stacks' : 'Soft Skills'}</h5>
+      <h4 data-aos="fade-up" className={styles.title}>{skillType === 'tech' ? 'Tech Stacks' : 'Soft Skills'}</h4>
       {skillType === 'tech' ? getTechStacks(skills) : getSoftSkills(skills)}
     </div>
   );

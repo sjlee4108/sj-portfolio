@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 
 export const logo = () => (
@@ -13,3 +14,10 @@ export const logo = () => (
 </svg>
 );
 export const name = 'Seungjae Lee';
+
+export const aboutMeDes = `Hello!
+
+I am Seungjae Lee, a developer from South Korea and a recent graduate of Dartmouth College. While my current interest is in the front-end, I have the knowledge of full-stack. Outside of web/app developement, I am interested in math-heavy applications such as machine learning and robotics\
+
+
+I am actively looking for an entry software developer positions, so please feel free to reach out to me if you think I would be a good fit.`;

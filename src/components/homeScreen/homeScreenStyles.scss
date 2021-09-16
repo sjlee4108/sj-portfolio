@@ -20,10 +20,16 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap-reverse;
 
   p{
-    width: 25em;
+    width: 30em;
     font-size: 1.1em;
+    white-space: pre-wrap;
+    line-height: 1.6em;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
   }
 }
 
