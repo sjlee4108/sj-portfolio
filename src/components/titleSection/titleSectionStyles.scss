@@ -93,7 +93,7 @@ $desk_width: 40em;
 }
 
 .markerHolder{
-  width: 28.9em;
+  width: calc(100% - 1.1em);
   height: 0.55em;
   background-color: rgb(84, 84, 84);
   position: absolute;
