@@ -118,9 +118,11 @@ const getBoardSection = (name, description) => {
 const TitleSection = (props) => {
   const { name, description } = props;
   return (
-    <div className={styles.container}>
-     {getBoardSection(name, description)}
-     {getWorkSection()}
+    <div className={styles.outerContainer}>
+      <div className={styles.innerContainer}>
+      {getBoardSection(name, description)}
+      {getWorkSection()}
+      </div>
     </div>
   );
 };
