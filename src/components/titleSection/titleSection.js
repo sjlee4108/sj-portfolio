@@ -1,11 +1,37 @@
 import React from 'react';
+import { Typewriter } from 'react-simple-typewriter';
+
 import { RiMoonClearLine } from 'react-icons/ri';
 import styles from './titleSectionStyles.scss';
+
+const preTypeWriterText = 'import React from \'react\'';
+const postTypeWriterText = [`
+
+const homeScreen = () => {
+  return (
+    <div className="homeContainerStyle">
+      <h1>Jason the Developer</h1>
+      <AboutMe name="Seungjae Lee"/>
+    </div>
+  );
+};`];
 
 const getLaptop = () => {
   return (
     <div className={styles.laptopContainer}>
-      <div className={styles.laptopScreen} />
+      <div className={styles.laptopScreen}>
+        <div className={styles.laptopTop}>
+          <div className={styles.redCircle} />
+          <div className={styles.yellowCircle} />
+          <div className={styles.greenCircle} />
+        </div>
+        {preTypeWriterText}
+        <Typewriter
+          words={postTypeWriterText}
+          cursor
+          cursorStyle="|"
+        />
+      </div>
       <div className={styles.laptopBottom} />
     </div>
   );

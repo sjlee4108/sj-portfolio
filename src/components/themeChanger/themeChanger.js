@@ -16,6 +16,9 @@ const setDark = () => {
   bodyStyles.setProperty('--theme-object-opacity', '0.7');
   bodyStyles.setProperty('--theme-light-color', 'rgba(255, 255, 255, 0.3)');
   bodyStyles.setProperty('--theme-bulb-color', 'white');
+  bodyStyles.setProperty('--theme-monitor-color', 'darkslategray');
+  bodyStyles.setProperty('--theme-monitor-text-color', 'lightyellow');
+  bodyStyles.setProperty('--theme-monitor-top-color', 'rgb(20, 20, 40)');
 };
 
 const setLight = () => {
@@ -31,6 +34,9 @@ const setLight = () => {
   bodyStyles.setProperty('--theme-object-opacity', '1');
   bodyStyles.setProperty('--theme-light-color', 'rgba(0, 0, 0, 0)');
   bodyStyles.setProperty('--theme-bulb-color', 'lightgray');
+  bodyStyles.setProperty('--theme-monitor-top-color', 'rgb(190, 190, 190)');
+  bodyStyles.setProperty('--theme-monitor-text-color', 'gray');
+  bodyStyles.setProperty('--theme-monitor-color', 'rgb(220, 220, 220)');
 };
 
 const ThemeChanger = () => {

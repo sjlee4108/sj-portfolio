@@ -78,7 +78,7 @@ $desk_width: 40em;
   justify-content: center;
   flex-direction: column;
   font-family: 'Caveat', cursive;
-
+  color: red;
   h1{
     color: black;
     font-size: 3em;
@@ -224,17 +224,65 @@ $desk_width: 40em;
   position: absolute;
   bottom: $desk_height - .3em;
   z-index: 2;
- 
+  filter: brightness(calc(var(--theme-object-opacity) + 0.2));
+
 }
 
 .laptopScreen{
-  width: 14em;
-  height: 8em;
+  width: 28em;
+  height: 16em;
   border:solid black;
-  border-width: 0.6em 0.6em;
-  border-radius: 0.6em 0.6em 0 0;
+  border-width: 1em 1em;
+  border-radius: 1.2em 1.2em 0 0;
   box-sizing: border-box;
-  background-color: darkslategray;
+  padding: 0.8em;
+  padding-top: 1.5em;
+  font-size: 0.5em;
+  white-space: pre-wrap;
+  -webkit-text-size-adjust: none;
+  background-color: var(--theme-monitor-color);
+  color: var(--theme-monitor-text-color);
+  position: relative;
+}
+
+.redCircle{
+  width: 0.5em;
+  height: 0.5em;
+  background-color: red;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+}
+
+.yellowCircle{
+  width: 0.5em;
+  height: 0.5em;
+  background-color: yellow;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+}
+
+.greenCircle{
+  width: 0.5em;
+  height: 0.5em;
+  background-color: green;
+  border-radius: 0.25em;
+}
+
+.laptopTop{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26em;
+  height: 1em;
+  background-color: var(--theme-monitor-top-color);
+  padding: 0em 0.3em;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.paddingLeft{
+  padding-left: 2em;
 }
 
 .laptopBottom{

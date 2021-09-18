@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styles from './navBarStyles.scss';
 import * as text from '../../constants/texts';
 import ThemeChanger from '../themeChanger/themeChanger';
@@ -7,9 +6,7 @@ import ThemeChanger from '../themeChanger/themeChanger';
 const getLogoSection = () => {
   return (
     <div className={styles.logoSectionContainer}>
-      <Link to="/">
       {text.logo()}
-      </Link>
       <ThemeChanger />
     </div>
   );
