@@ -100,7 +100,7 @@ export const projects = {
     {
       title: 'CS 52: Full-Stack Web Development & Personal Web projects',
       position: 'Individual',
-      tags: ['ENGS 21', 'Arduino', 'CAD Design'],
+      tags: ['HTML/CSS', 'React', 'Node.js', 'Firebase'],
       image: CS52Img,
       imageOverflow: true,
       term: 'Spring 2021',
