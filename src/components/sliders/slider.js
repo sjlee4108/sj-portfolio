@@ -78,6 +78,13 @@ const Slider = (props) => {
           if (index === 0)setIndex(contents.length - 1);
           else setIndex((index - 1) % contents.length);
         }}
+        onKeyPress={(e) => {
+          if (e.key === 'Enter') {
+            setReverse(!isReverse);
+            if (index === 0)setIndex(contents.length - 1);
+            else setIndex((index - 1) % contents.length);
+          }
+        }}
         role="button"
         tabIndex={0}
       />
@@ -89,6 +96,12 @@ const Slider = (props) => {
         onClick={() => {
           setReverse(!isReverse);
           setIndex((index + 1) % contents.length);
+        }}
+        onKeyPress={(e) => {
+          if (e.key === 'Enter') {
+            setReverse(!isReverse);
+            setIndex((index + 1) % contents.length);
+          }
         }}
         role="button"
         tabIndex={0}
