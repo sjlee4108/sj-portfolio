@@ -3,6 +3,7 @@ $desk_width: 40em;
 
 .container{
   width: 100%;
+  max-width: 100em;
   height: max(40em, 100vh);
   display: flex;
   flex-direction: row;
