@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import AOS from 'aos';
 import NavBar from './navBar/navBar';
 import Home from './homeScreen/homeScreen';
 
@@ -14,6 +15,8 @@ const App = (props) => {
     const aboutMeScroll = () => { console.log('testing'); aboutMeRef.current.scrollIntoView(); };
     const projectsScroll = () => projectsRef.current.scrollIntoView();
     const skillsScroll = () => skillsRef.current.scrollIntoView();
+
+    React.useEffect(() => { AOS.init(); AOS.refresh(); }, []);
 
     return (
         <Router>
