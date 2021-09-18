@@ -1,5 +1,4 @@
 import React from 'react';
-import { IconContext } from 'react-icons/lib';
 import { RiMoonClearLine } from 'react-icons/ri';
 import styles from './titleSectionStyles.scss';
 
