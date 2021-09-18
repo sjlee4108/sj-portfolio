@@ -320,6 +320,7 @@ $desk_width: 40em;
   width: 8em;
   height: 0.2em;
   background-color: var(--theme-bulb-color);
+  filter: brightness(4);
   position: absolute;
   bottom: 17.95em;
   right: 12.8em;
@@ -340,6 +341,7 @@ $desk_width: 40em;
   right: 0.8em;
   transition: color 0.5s linear;
   transition-delay: 0.6s;
+  filter: brightness(4);
 }
 
 @media (max-width: 42em){

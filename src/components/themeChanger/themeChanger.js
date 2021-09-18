@@ -14,7 +14,7 @@ const setDark = () => {
   bodyStyles.setProperty('--theme-slider-background-2', '#1f292a');
   bodyStyles.setProperty('--theme-skill-background', '#1f292a');
   bodyStyles.setProperty('--theme-object-opacity', '0.7');
-  bodyStyles.setProperty('--theme-light-color', 'rgba(255, 255, 255, 0.35)');
+  bodyStyles.setProperty('--theme-light-color', 'rgba(255, 255, 255, 0.3)');
   bodyStyles.setProperty('--theme-bulb-color', 'white');
 };
 
