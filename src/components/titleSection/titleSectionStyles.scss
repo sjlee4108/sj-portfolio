@@ -7,6 +7,9 @@ $desk_width: 40em;
   margin-bottom: 4em;
   background-color: var(--theme-room-background);
   transition: background-color 0.5s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .innerContainer{
