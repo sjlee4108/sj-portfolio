@@ -76,7 +76,7 @@ const getBoardSection = (name, description) => {
           <div className={styles.bluePen} />
           <div className={styles.eraser} />
         </div>
-        <div className={styles.board}>
+        <div data-aos="flip-down" className={styles.board}>
           <h1>{`Hi, I am ${name}`}</h1>
           <h2>{description}</h2>
         </div>
