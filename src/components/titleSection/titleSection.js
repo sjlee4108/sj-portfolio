@@ -1,4 +1,6 @@
 import React from 'react';
+import { IconContext } from 'react-icons/lib';
+import { RiMoonClearLine } from 'react-icons/ri';
 import styles from './titleSectionStyles.scss';
 
 const getLaptop = () => {
@@ -79,6 +81,10 @@ const getBoardSection = (name, description) => {
         <div data-aos="flip-down" className={styles.board}>
           <h1>{`Hi, I am ${name}`}</h1>
           <h2>{description}</h2>
+          <RiMoonClearLine style={{ position: 'absolute', left: '0.5em', top: '1.5em' }} />
+          <small className={styles.sideBoardText}>Try dark mode!!!</small>
+          <small className={styles.toDoText}>* To-do</small>
+          <small className={styles.postIT}>한글 패치 준비중</small>
         </div>
     </div>
   );

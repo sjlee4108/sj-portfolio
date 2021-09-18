@@ -77,15 +77,15 @@ $desk_width: 40em;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  font-family: 'Caveat', cursive;
 
   h1{
-    font-family: 'Caveat', sans-serif;
     color: black;
     font-size: 3em;
+    padding-top: 0.5em;
     margin-bottom: 0.5em;
   }
   h2{
-    font-family: 'Caveat', sans-serif;
     color:blue;
     font-size: 1.6em;
 
@@ -129,6 +129,40 @@ $desk_width: 40em;
   margin-right: 2em;
 }
 
+.sideBoardText{
+  position: absolute;
+  color: red;
+  font-size: 0.9em;
+  left: 0.5em;
+  top: 2em;
+  transform: rotate(-20deg);
+  text-decoration: underline;
+  border-bottom: solid red 0.1em;
+}
+
+.toDoText{
+  position: absolute;
+  color: red;
+  font-size: 0.7em;
+  top: 0.5em;
+  right: 6em;
+  transform: rotate(-20deg);
+}
+
+.postIT{
+  width: 4em;
+  color: black;
+  font-size: 0.9em;
+  padding: 0.4em 0.3em;
+  box-sizing: border-box;
+  background-color: khaki;
+  position: absolute;
+  font-family: 'Nanum Pen Script', cursive;
+  position: absolute;
+  top: 1.5em;
+  right: 1em;
+  text-align: center;
+}
 
 .animationSection{
   position: absolute;
