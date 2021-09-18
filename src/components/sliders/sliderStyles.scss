@@ -44,13 +44,22 @@
   left: 0em;
   z-index: 10;
   cursor: pointer;
+  opacity: 0.4;
 }
 
 .buttonLeft:hover{
-  opacity: 0.2;
+  opacity: 1;
 }
 .buttonRight:hover{
-  opacity: 0.2;
+  opacity: 1;
+}
+
+.buttonRight:focus{
+  opacity: 1;
+}
+
+.buttonLeft:focus{
+  opacity: 1;
 }
 
 .buttonRight{
@@ -61,6 +70,7 @@
   right: 0em;
   z-index: 10;
   cursor: pointer;
+  opacity: 0.4;
 }
 
 
