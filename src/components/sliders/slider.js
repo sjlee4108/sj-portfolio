@@ -9,6 +9,7 @@ const getProjectImages = (projects, index) => {
     <img
       src={project.image}
       alt=""
+      key={project.title}
       className={[styles.projectImage, i === index ? styles.opacity : '', project.imageOverflow ? null : styles.coverImage].join(' ')}
     />
   ));
@@ -19,6 +20,7 @@ const getSliderDots = (index, total, reverse, setIndex) => {
     <div className={[styles.dots, reverse ? styles.reversedDots : null].join(' ')}>
       {Array.from(new Array(total), (e, i) => (
         <div role="button"
+          key={i}
           tabIndex="-1"
           onClick={() => { if (index !== i) setIndex(i); }}
           className={[styles.dot, i === index ? styles.filledDot : null].join(' ')}
@@ -31,7 +33,7 @@ const getSliderDots = (index, total, reverse, setIndex) => {
 const getTags = (tags, position, term) => {
   return (
     <div className={styles.tagsContainer}>
-        {tags.map((tag) => <Tag value={tag} />)}
+        {tags.map((tag) => <Tag key={tag + term + position} value={tag} />)}
         <div className={styles.positionContainer}>
           <i>{position}</i>
           <i>{term}</i>
@@ -41,7 +43,7 @@ const getTags = (tags, position, term) => {
 };
 
 const getBulletPoints = (bullets) => {
-return bullets.map((bullet) => <li>{bullet}</li>);
+return bullets.map((bullet) => <li key={bullet}>{bullet}</li>);
 };
 
 const getTextSection = (contents, reverse, index, setIndex) => {
