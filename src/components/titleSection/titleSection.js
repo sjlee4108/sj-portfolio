@@ -5,7 +5,7 @@ import { RiMoonClearLine } from 'react-icons/ri';
 import styles from './titleSectionStyles.scss';
 
 const preTypeWriterText = 'import React from \'react\'';
-const postTypeWriterText = [`
+const postTypeWriterText = ['', `
 
 const homeScreen = () => {
   return (

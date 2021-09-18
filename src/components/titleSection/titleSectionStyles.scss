@@ -244,6 +244,7 @@ $desk_width: 40em;
   background-color: var(--theme-monitor-color);
   color: var(--theme-monitor-text-color);
   position: relative;
+  transition: all 0.2s linear;
 }
 
 .redCircle{
@@ -280,6 +281,7 @@ $desk_width: 40em;
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  transition: background-color 0.2s linear;
 }
 
 .paddingLeft{
