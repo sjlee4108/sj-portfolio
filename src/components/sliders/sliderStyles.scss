@@ -47,18 +47,7 @@
   opacity: 0.4;
 }
 
-.buttonLeft:hover{
-  opacity: 1;
-}
-.buttonRight:hover{
-  opacity: 1;
-}
-
-.buttonRight:focus{
-  opacity: 1;
-}
-
-.buttonLeft:focus{
+.buttonLeft:hover, .buttonRight:hover, .buttonRight:focus, .buttonLeft:focus{
   opacity: 1;
 }
 
