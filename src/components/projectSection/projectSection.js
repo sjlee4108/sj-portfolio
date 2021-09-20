@@ -2,31 +2,23 @@
 import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { withStyles } from '@material-ui/core';
 import { connect } from 'react-redux';
 import styles from './projectSectionStyles.scss';
+import ProjectBox from './projectBox';
+import { projects } from '../../constants/projects';
 
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
+const TabContents = (props) => {
+  const { value, ...other } = props;
+  const valToType = { 0: 'web', 1: 'app', 2: 'others' };
+  const selectedType = valToType[value];
   return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
+    <div className={styles.tabContentsContainer}>
+    {projects.english.filter((p) => p.type === selectedType).map((project) => <ProjectBox {...other} project={project} />)}
     </div>
   );
-}
+};
 
 function a11yProps(index) {
   return {
@@ -50,6 +42,7 @@ const ProjectSection = (props) => {
 
   React.useEffect(() => {
     window.addEventListener('resize', handleResize);
+    setWidth(window.innerWidth);
     return window.addEventListener('resize', handleResize);
   }, []);
 
@@ -61,7 +54,7 @@ const ProjectSection = (props) => {
 
   return (
     <div data-aos="fade-up" className={styles.container}>
-    <Box sx={width < widthLimit ? { width: '100%' } : { height: '100%', display: 'flex', flexDirection: 'row' }}>
+    <Box sx={{ width: '100%', display: 'flex', flexDirection: width < widthLimit ? 'column' : 'row' }}>
       <Box sx={{ borderRight: width < widthLimit ? 0 : 1, borderBottom: width < widthLimit ? 1 : 0, borderColor: props.theme === 'light' ? 'divider' : '#b7e0e266' }}>
         <Tabs
           orientation={width < widthLimit ? 'horizontal' : 'vertical'}
@@ -77,15 +70,7 @@ const ProjectSection = (props) => {
           <CustomTab label="Others" {...a11yProps(2)} />
         </Tabs>
       </Box>
-      <TabPanel value={value} index={0}>
-        {width}
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel>
+      <TabContents value={value} />
     </Box>
     </div>
   );

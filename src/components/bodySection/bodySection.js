@@ -4,10 +4,12 @@ import styles from './bodySectionStyles.scss';
 const BodySection = (props) => {
   const { title, id, sectionRef } = props;
   return (
-    <section className={styles.bodyContainer} id={id} ref={sectionRef}>
+    <article className={styles.bodyContainer} id={id} ref={sectionRef}>
       <h3 data-aos="fade-up" className={styles.title}>{title}</h3>
+      <section className={styles.innerContainer}>
       {props.children}
-    </section>
+      </section>
+    </article>
   );
 };
 

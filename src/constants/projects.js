@@ -17,6 +17,7 @@ export const projects = {
       term: 'Spring 2021 - Summer 2021',
       image: Vitalize,
       imageOverflow: true,
+      type: 'app',
       description: `
         Vitalize is a startup that provides trauma-informed digital wellness platform tailored to healthcare providers. 
         As an intern, I worked on developing the first beta version.
@@ -33,6 +34,7 @@ export const projects = {
       tags: ['React', 'Figma', 'ENGS 89/90'],
       term: 'Fall 2020 - Winter 2021',
       image: PT,
+      type: 'web',
       imageOverflow: true,
       description: `
         Positive Tracks(PT) is a non-profit org that helps youth make social changes through physical activity.
@@ -52,6 +54,7 @@ export const projects = {
       tags: ['Research', 'Robotics', 'ROS/Python'],
       image: RobotImage2,
       imageOverflow: false,
+      type: 'others',
       description: `
       As a research assistant for Prof. Eric Aaron, I worked on dynamic robot navigation for indoor environment, 
       a system which guides a robot to a target location based on local obstacles.
@@ -70,6 +73,7 @@ export const projects = {
       image: ImageVid,
       imageOverflow: false,
       term: 'Fall 2019 - Spring 2020',
+      type: 'web',
       description: `
       As a research assistant for Prof. Jan Holly, I worked on building a differential equation model that simulates a brain’s spatial disorientation,
       the inability of a person to determine his true body position, motion, and altitude relative to the earth, in circular motions. 
@@ -87,6 +91,7 @@ export const projects = {
       image: ImageVidENGS21,
       imageOverflow: false,
       term: 'Winter 2019',
+      type: 'web',
       description: `
       For ENGS 21 project, our group aimed to prevent pipe burst damages of vactional homes. As our solution, we built a battery powered pipe freeze monitoring system 
       that emails the user warning them of a potential freeze, and then drains their pipes preventing damages from bursts. 
@@ -104,6 +109,7 @@ export const projects = {
       image: CS52Img,
       imageOverflow: true,
       term: 'Spring 2021',
+      type: 'web',
       description: `
       The following items are projects from CS 52 and personal web projects pursued after:
       `.replace(/\n/g, ' '),
