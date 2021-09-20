@@ -6,12 +6,14 @@
 // this defines what your store state will look like
 import { combineReducers } from 'redux';
 
-import CountReducer from './count-reducer';
+import LangReducer from './language-reducer';
+import ThemeReducer from './theme-reducer';
 
 // Root reducer (top level) uses combineReducers
 // to combine multiple reducers together into our redux state.
 const rootReducer = combineReducers({
-    count: CountReducer,
+    language: LangReducer,
+    theme: ThemeReducer,
 });
 
 export default rootReducer;
