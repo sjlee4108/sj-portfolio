@@ -37,33 +37,48 @@ function a11yProps(index) {
 
 const ProjectSection = (props) => {
   const [value, setValue] = React.useState(0);
+  const [width, setWidth] = React.useState(0);
+  const widthLimit = 700;
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
+ const handleResize = (e) => {
+   setWidth(window.innerWidth);
+ };
+
+  React.useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return window.addEventListener('resize', handleResize);
+  }, []);
+
   const CustomTab = withStyles({
     root: {
-      color: 'primary',
-    },
-    selected: {
-      color: 'primary',
+      color: props.theme === 'light' ? 'primary' : '#b7e0e2cc',
     },
   })(Tab);
-  console.log(props.theme);
 
   return (
     <div data-aos="fade-up" className={styles.container}>
-    <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" textColor="secondary" indicatorColor="secondary">
+    <Box sx={width < widthLimit ? { width: '100%' } : { height: '100%', display: 'flex', flexDirection: 'row' }}>
+      <Box sx={{ borderRight: width < widthLimit ? 0 : 1, borderBottom: width < widthLimit ? 1 : 0, borderColor: props.theme === 'light' ? 'divider' : '#b7e0e266' }}>
+        <Tabs
+          orientation={width < widthLimit ? 'horizontal' : 'vertical'}
+          variant="scrollable"
+          value={value}
+          onChange={handleChange}
+          aria-label="basic tabs example"
+          textColor="primary"
+          indicatorColor="primary"
+        >
           <CustomTab label="Web Projects" {...a11yProps(0)} />
           <CustomTab label="App Projects " {...a11yProps(1)} />
           <CustomTab label="Others" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        Item One
+        {width}
       </TabPanel>
       <TabPanel value={value} index={1}>
         Item Two

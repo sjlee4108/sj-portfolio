@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Switch from 'react-switch';
 import { RiMoonClearLine, RiSunLine } from 'react-icons/ri';
 import { connect } from 'react-redux';
@@ -6,26 +6,22 @@ import { setDark, setLight } from '../../actions';
 import styles from './themeChangerStyles.scss';
 
 const ThemeChanger = (props) => {
-  const [themeState, setThemeState] = useState(false);
-
   const handleChange = () => {
-    if (!themeState) {
+    if (props.theme === 'light') {
       localStorage.setItem('Theme', 'dark');
-      setDark();
+      props.setDark();
     } else {
       localStorage.setItem('Theme', 'light');
-      setLight();
+      props.setLight();
     }
-    setThemeState(!themeState);
   };
 
   useEffect(() => {
     const getTheme = localStorage.getItem('Theme');
     if (getTheme === 'dark') {
-      setThemeState(true);
-      setDark();
+      props.setDark();
     } else {
-      setLight();
+      props.setLight();
     }
   }, []);
 
@@ -34,7 +30,7 @@ const ThemeChanger = (props) => {
       <Switch
         onKeyPress={handleChange}
         onChange={handleChange}
-        checked={themeState}
+        checked={props.theme === 'dark'}
         onColor="#222"
         offColor="#ddd"
         onHandleColor="#444"
@@ -44,9 +40,9 @@ const ThemeChanger = (props) => {
         width={50}
         checkedHandleIcon={<RiMoonClearLine style={{ display: 'flex', margin: '4px', width: 'calc(100% - 8px)', height: 'calc(100% - 8px)', alignItems: 'center', justifyContent: 'center' }} />}
         uncheckedHandleIcon={<RiSunLine style={{ display: 'flex', margin: '4px', width: 'calc(100% - 8px)', height: 'calc(100% - 8px)', alignItems: 'center', justifyContent: 'center' }} />}
-        activeBoxShadow={themeState ? '0 0 2px 3px currentColor' : '0 0 2px 3px #DDDD00'}
+        activeBoxShadow={props.theme === 'dark' ? '0 0 2px 3px currentColor' : '0 0 2px 3px #DDDD00'}
       />
-      <small>{themeState ? 'Dark Mode' : 'Light Mode'}</small>
+      <small>{props.theme === 'dark' ? 'Dark Mode' : 'Light Mode'}</small>
     </div>
   );
 };
@@ -56,4 +52,4 @@ const stateToProps = (state) => {
     theme: state.theme,
   };
 };
-export default connect(stateToProps, {})(ThemeChanger);
+export default connect(stateToProps, { setLight, setDark })(ThemeChanger);
