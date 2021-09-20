@@ -5,6 +5,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { withStyles } from '@material-ui/core';
+import { connect } from 'react-redux';
 import styles from './projectSectionStyles.scss';
 
 function TabPanel(props) {
@@ -34,7 +35,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs() {
+const ProjectSection = (props) => {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -49,6 +50,7 @@ export default function BasicTabs() {
       color: 'primary',
     },
   })(Tab);
+  console.log(props.theme);
 
   return (
     <div data-aos="fade-up" className={styles.container}>
@@ -72,4 +74,11 @@ export default function BasicTabs() {
     </Box>
     </div>
   );
-}
+};
+
+const stateToProps = (state) => {
+  return {
+    theme: state.theme,
+  };
+};
+export default connect(stateToProps, {})(ProjectSection);
