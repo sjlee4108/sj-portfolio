@@ -6,8 +6,8 @@
   padding: 2em;
   margin: 1em 0em;
   background-color: var(--theme-slider-background-2);
-  min-height: 35em;
   max-width: 84em;
+  margin-bottom: auto;
 }
 
 .tabContentsContainer{
@@ -23,5 +23,32 @@
 @media (min-width: 700px){
   .container{
    padding: 2em 0em;
+  }
+}
+
+@media (min-width: 86em){
+  .tabContentsContainer{
+    grid-template-columns: repeat(auto-fill, minmax(23em, 1fr));
+    padding: 0em 3em;
+    column-gap: 3em;
+    row-gap: 3em;
+    min-height: 53em;
+  }
+}
+
+@media (max-width: 32em){
+  .tabContentsContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    column-gap: 0.5em;
+    row-gap: 2em;
+    padding: 0em;
+  }
+
+  .container{
+    width: calc(100%);
+    padding: 1em;
   }
 }

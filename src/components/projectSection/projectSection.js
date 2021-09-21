@@ -31,6 +31,7 @@ const ProjectSection = (props) => {
   const [value, setValue] = React.useState(0);
   const [width, setWidth] = React.useState(0);
   const widthLimit = 700;
+  const isHorizontalTab = width < widthLimit;
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -54,10 +55,12 @@ const ProjectSection = (props) => {
 
   return (
     <div data-aos="fade-up" className={styles.container}>
-    <Box sx={{ width: '100%', display: 'flex', flexDirection: width < widthLimit ? 'column' : 'row' }}>
-      <Box sx={{ borderRight: width < widthLimit ? 0 : 1, borderBottom: width < widthLimit ? 1 : 0, borderColor: props.theme === 'light' ? 'divider' : '#b7e0e266' }}>
+    <Box sx={{ width: '100%', display: 'flex', flexDirection: isHorizontalTab ? 'column' : 'row' }}>
+      <Box sx={{
+        borderRight: isHorizontalTab ? 0 : 1, borderBottom: isHorizontalTab ? 1 : 0, marginBottom: isHorizontalTab ? 2 : 0, borderColor: props.theme === 'light' ? 'divider' : '#b7e0e266' }}
+      >
         <Tabs
-          orientation={width < widthLimit ? 'horizontal' : 'vertical'}
+          orientation={isHorizontalTab ? 'horizontal' : 'vertical'}
           variant="scrollable"
           value={value}
           onChange={handleChange}
