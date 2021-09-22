@@ -52,6 +52,8 @@ const ProjectModal = (props) => {
     maxWidth: 0.8,
     bgcolor: props.theme === 'light' ? 'primary.main' : 'secondary.main',
     boxShadow: 24,
+    maxHeight: 0.85,
+    overflow: 'scroll',
     p: 4,
   };
 
@@ -66,12 +68,12 @@ const ProjectModal = (props) => {
           aria-describedby="modal-modal-description"
         >
           <Box sx={style}>
-            <Typography id="modal-modal-title" variant="h4" component="h1" sx={{ fontWeight: '400', mb: 2 }}>
+            <Typography id="modal-modal-title" variant="h4" component="h1" sx={{ fontSize: 28, fontWeight: '400', mb: 2 }}>
               {contents.title}
             </Typography>
             <img style={{ width: '20em', height: 'auto' }} src={contents.image} alt="" />
             {getTags(contents.tags, contents.position, contents.term)}
-            <Typography id="modal-modal-description" sx={{ mt: 2, fontWeight: '400' }}>
+            <Typography id="modal-modal-description" sx={{ mt: 2, fontSize: 14, fontWeight: '400' }}>
               {contents.description}
             </Typography>
             {getBulletPoints(contents.bullets)}
