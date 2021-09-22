@@ -10,6 +10,7 @@ import { techStacks, softSkills } from '../../constants/skills';
 import profileImg from '../../assets/profile.jpg';
 import { aboutMeDes } from '../../constants/texts';
 import ProjectSection from '../projectSection/projectSection';
+import ProjectModal from '../projectSection/projectModal';
 
 const Home = (props) => {
   const { aboutMeRef, projectsRef, skillsRef } = props;
@@ -29,6 +30,7 @@ const Home = (props) => {
           contents={projects.english}
         /> */}
         <ProjectSection />
+        <ProjectModal open />
       </BodySection>
       <BodySection title="Skills" id="skills" sectionRef={skillsRef}>
         <div className={styles.skillContainer}>
