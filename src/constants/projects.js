@@ -5,6 +5,9 @@ import ImageVidENGS21 from '../assets/engs21.gif';
 import CS52Img from '../assets/cs52.png';
 import Vitalize from '../assets/2smartphones.png';
 import PT from '../assets/PT.png';
+import ReactNoteGIF from '../assets/reactNote.gif';
+import DrinkBuzzGIF from '../assets/drinkBuzz.gif';
+import Lab1GIF from '../assets/lab1.gif';
 
 export const logo = 'SJ';
 export const name = 'Seungjae Lee';
@@ -77,7 +80,7 @@ export const projects = {
       image: ImageVid,
       imageOverflow: false,
       term: 'Fall 2019 - Spring 2020',
-      type: 'web',
+      type: 'others',
       description: `
       As a research assistant for Prof. Jan Holly, I worked on building a differential equation model that simulates a brain’s spatial disorientation,
       the inability of a person to determine his true body position, motion, and altitude relative to the earth, in circular motions. 
@@ -96,7 +99,7 @@ export const projects = {
       image: ImageVidENGS21,
       imageOverflow: false,
       term: 'Winter 2019',
-      type: 'web',
+      type: 'others',
       description: `
       For ENGS 21 project, our group aimed to prevent pipe burst damages of vactional homes. As our solution, we built a battery powered pipe freeze monitoring system 
       that emails the user warning them of a potential freeze, and then drains their pipes preventing damages from bursts. 
@@ -109,23 +112,56 @@ export const projects = {
     },
     {
       id: 5,
-      title: 'CS 52: Full-Stack Web Development & Personal Web projects',
+      title: 'CS 52: K-Gang',
       position: 'Individual',
-      tags: ['HTML/CSS', 'React', 'Node.js', 'Firebase'],
-      image: CS52Img,
+      tags: ['HTML', 'CSS'],
+      image: Lab1GIF,
       imageOverflow: true,
       term: 'Spring 2021',
       type: 'web',
       description: `
-      The following items are projects from CS 52 and personal web projects pursued after:
+      For CS 52 Lab 1: I created a landing page by using HTML and CSS only. 
       `.replace(/\n/g, ' '),
       bullets: [
-      'Lab 1: K-hiphop community landing page(only HTML & CSS)',
-      'Lab 2: Drink buzzfeed quiz(Javascript)',
-      'Lab 3: Live-editing note page(React, Firebase)',
-      'Lab 4, 5: Linksharing page(Full-stack, React, Node.js, MongoDB)',
-      'DartConnect: SNS page for school, followed instagram design (React, Firebase)',
-      'Portfolio Page: Personal page with projects, skills(React)',
+      'Followed the structure of https://simpleanalytics.com/',
+      'Replicated typewriter effect',
+      'Used CSS checkbox https://css-tricks.com/the-checkbox-hack/',
+      'Used media query to build a responsive web',
+      ],
+    },
+    {
+      id: 6,
+      title: 'CS 52: Drink Buzzfeed',
+      position: 'Individual',
+      tags: ['HTML', 'CSS', 'Javascript', 'Jquery'],
+      image: DrinkBuzzGIF,
+      imageOverflow: true,
+      term: 'Spring 2021',
+      type: 'web',
+      description: `
+      For CS 52 Lab 2: I created a buzzfeed quiz using HMTL, CSS, JS, and Jquery.
+      `.replace(/\n/g, ' '),
+      bullets: [
+      'Added animation, transition to make web more interactive.',
+      'Used JSON to save and load quiz contents',
+      ],
+    },
+    {
+      id: 7,
+      title: 'CS 52: Note Share',
+      position: 'Individual',
+      tags: ['HTML', 'CSS', 'Firebase', 'React'],
+      image: ReactNoteGIF,
+      imageOverflow: true,
+      term: 'Spring 2021',
+      type: 'web',
+      description: `
+      For CS 52 Lab 3: I created a live-editing note sharing page. Users can create, edit and share notes together live time. 
+      `.replace(/\n/g, ' '),
+      bullets: [
+      'Used Firebase Realtime database with Google Auth as backend',
+      'User can have their own boards and share code with others',
+      'Notes support markdown syntax and are draggable',
       ],
     },
 
