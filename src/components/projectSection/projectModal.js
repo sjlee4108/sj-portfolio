@@ -2,6 +2,8 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import { connect } from 'react-redux';
+import { setModalClose } from '../../actions';
 
 const style = {
   position: 'absolute',
@@ -16,19 +18,18 @@ const style = {
 };
 
 const ProjectModal = (props) => {
-  const { open, setOpen } = props;
-  const handleClose = () => setOpen(false);
+  const { open, projectIndex } = props;
 
   return (
       <Modal
         open={open}
-        onClose={handleClose}
+        onClose={props.setModalClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+            Text in a modal {projectIndex}
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
@@ -38,4 +39,11 @@ const ProjectModal = (props) => {
   );
 };
 
-export default ProjectModal;
+const mapStateToProps = (state) => {
+  return {
+    open: state.modal.isOpen,
+    projectIndex: state.modal.index,
+  };
+};
+
+export default connect(mapStateToProps, { setModalClose })(ProjectModal);

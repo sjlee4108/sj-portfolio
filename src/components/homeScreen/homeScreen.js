@@ -30,7 +30,7 @@ const Home = (props) => {
           contents={projects.english}
         /> */}
         <ProjectSection />
-        <ProjectModal open />
+        <ProjectModal />
       </BodySection>
       <BodySection title="Skills" id="skills" sectionRef={skillsRef}>
         <div className={styles.skillContainer}>

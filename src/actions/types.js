@@ -4,6 +4,8 @@ export const ActionTypes = {
     SETENGLISH: 'SETENGLISH',
     SETDARKMODE: 'SETDARK',
     SETLIGHTMODE: 'SETLIGHT',
+    SETMODALCLOSE: 'SETMODALCLOSE',
+    SETMODALOPEN: 'SETMODALOPEN',
 };
 
 export default ActionTypes;

@@ -7,15 +7,16 @@ import { withStyles } from '@material-ui/core';
 import { connect } from 'react-redux';
 import styles from './projectSectionStyles.scss';
 import ProjectBox from './projectBox';
+import { setModalOpen } from '../../actions';
 import { projects } from '../../constants/projects';
 
 const TabContents = (props) => {
-  const { value, ...other } = props;
+  const { value } = props;
   const valToType = { 0: 'web', 1: 'app', 2: 'others' };
   const selectedType = valToType[value];
   return (
     <div className={styles.tabContentsContainer}>
-    {projects.english.filter((p) => p.type === selectedType).map((project) => <ProjectBox {...other} project={project} />)}
+    {projects.english.filter((p, index) => p.type === selectedType).map((project) => <ProjectBox onClick={() => props.setModalOpen(project.id)} project={project} />)}
     </div>
   );
 };
@@ -73,7 +74,7 @@ const ProjectSection = (props) => {
           <CustomTab label="Others" {...a11yProps(2)} />
         </Tabs>
       </Box>
-      <TabContents value={value} />
+      <TabContents value={value} setModalOpen={props.setModalOpen} />
     </Box>
     </div>
   );
@@ -84,4 +85,4 @@ const stateToProps = (state) => {
     theme: state.theme,
   };
 };
-export default connect(stateToProps, {})(ProjectSection);
+export default connect(stateToProps, { setModalOpen })(ProjectSection);

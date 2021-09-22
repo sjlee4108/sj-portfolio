@@ -7,6 +7,7 @@
 import { combineReducers } from 'redux';
 
 import LangReducer from './language-reducer';
+import ModalReducer from './modal-reducer';
 import ThemeReducer from './theme-reducer';
 
 // Root reducer (top level) uses combineReducers
@@ -14,6 +15,7 @@ import ThemeReducer from './theme-reducer';
 const rootReducer = combineReducers({
     language: LangReducer,
     theme: ThemeReducer,
+    modal: ModalReducer,
 });
 
 export default rootReducer;

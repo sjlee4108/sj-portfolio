@@ -11,6 +11,7 @@ export const name = 'Seungjae Lee';
 export const projects = {
   english: [
     {
+      id: 0,
       title: 'Vitalize: Wellness App for Clinician',
       position: 'Full-Stack Intern',
       tags: ['React-Native', 'Node.js', 'MongoDB'],
@@ -29,6 +30,7 @@ export const projects = {
       'Beta version expected to be launched in September and tested by clinicians.'],
     },
     {
+      id: 1,
       title: 'Positive Tracks: Event Platform for Youth Activism',
       position: 'Designer & Front-end',
       tags: ['React', 'Figma', 'ENGS 89/90'],
@@ -48,6 +50,7 @@ export const projects = {
         'Full version expected to be released from PT'],
     },
     {
+      id: 2,
       title: 'Dynamic Navigation System for Indoor Robots',
       position: 'Research Assistant',
       term: 'Summer 2019 - Fall 2019',
@@ -67,6 +70,7 @@ export const projects = {
         'Work presented at Colby Undergraduate Summer Research Retreat'],
     },
     {
+      id: 3,
       title: 'Spatial Disorientation in Circular Motions',
       position: 'Research Assistant',
       tags: ['Research', 'Math Modeling', 'MATLAB'],
@@ -85,6 +89,7 @@ export const projects = {
       'Work presented at Vestibular-Oriented Research Meeting 2021'],
     },
     {
+      id: 4,
       title: 'Pipe-bust Prevention System',
       position: 'Group Member',
       tags: ['ENGS 21', 'Arduino', 'CAD Design'],
@@ -103,6 +108,7 @@ export const projects = {
       'Work selected to present for Thayer open house'],
     },
     {
+      id: 5,
       title: 'CS 52: Full-Stack Web Development & Personal Web projects',
       position: 'Individual',
       tags: ['HTML/CSS', 'React', 'Node.js', 'Firebase'],
