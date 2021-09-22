@@ -43,3 +43,21 @@
 }
 
 
+.closeButton{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+}
+
+.closeButton:hover{
+  opacity: 0.4;
+}
+
+.imageContainer{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+

@@ -2,12 +2,13 @@
 import RobotImage2 from '../assets/robot2.jpeg';
 import ImageVid from '../assets/version1.gif';
 import ImageVidENGS21 from '../assets/engs21.gif';
-import CS52Img from '../assets/cs52.png';
 import Vitalize from '../assets/2smartphones.png';
 import PT from '../assets/PT.png';
 import ReactNoteGIF from '../assets/reactNote.gif';
 import DrinkBuzzGIF from '../assets/drinkBuzz.gif';
 import Lab1GIF from '../assets/lab1.gif';
+import DartConnectGIF from '../assets/dartconnect.gif';
+import LinkShareIMG from '../assets/linkshare.png';
 
 export const logo = 'SJ';
 export const name = 'Seungjae Lee';
@@ -162,6 +163,43 @@ export const projects = {
       'Used Firebase Realtime database with Google Auth as backend',
       'User can have their own boards and share code with others',
       'Notes support markdown syntax and are draggable',
+      ],
+    },
+    {
+      id: 8,
+      title: 'DartConnect',
+      position: 'Individual',
+      tags: ['HTML', 'CSS', 'Firebase', 'React'],
+      image: DartConnectGIF,
+      imageOverflow: true,
+      term: 'Spring 2021',
+      type: 'web',
+      description: `
+      For the personal project, I created a school SNS that replicates the structure of Instagram and Facebook.
+      `.replace(/\n/g, ' '),
+      bullets: [
+      'Used Firebase Realtime database with email & passowrd auth as backend',
+      'Used Mapquest API to get a map image of hometown',
+      'Replicated Instagram feed structure including sidebar',
+      'Web/mobile responsive using media queries',
+      ],
+    },
+    {
+      id: 9,
+      title: 'CS 52: LinkShare',
+      position: 'Individual',
+      tags: ['HTML', 'CSS', 'React', 'Node.js', 'MongoDB'],
+      image: LinkShareIMG,
+      imageOverflow: true,
+      term: 'Spring 2021',
+      type: 'web',
+      description: `
+      For the CS 52 Lab 4 and 5, I created a full-stack webpage. Linkshare allows user to share links and relevant information about the link.
+      `.replace(/\n/g, ' '),
+      bullets: [
+      'Used React Material ui library for the table format and redux for state management',
+      'Used Node.js for backend with MongoDB as database',
+      'Used jwt for authentication',
       ],
     },
 
