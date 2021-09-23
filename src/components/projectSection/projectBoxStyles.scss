@@ -1,0 +1,53 @@
+.tagContainer{
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-color: var(--theme-slider-background-1);
+  padding: 0.5em;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.imageContainer{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5em;
+}
+
+.nameContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  padding: 2em;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.nameContainer:hover{
+  opacity: 1;
+
+}
+
+@media (min-width: 86em){
+  .tagContainer{
+    padding: 1em;
+  }
+  .nameContainer{
+    font-size: 1.8em;
+  }
+}

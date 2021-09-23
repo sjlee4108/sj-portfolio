@@ -3,7 +3,7 @@ import styles from './skillSectionStyles.scss';
 
 const getTechStacks = (stacks) => {
   return stacks.map((stack) => (
-    <div key={stack.name} data-aos="fade-right" className={styles.techContainer}>
+    <div key={stack.name} data-aos="fade-up" className={styles.techContainer}>
       {stack.icon()}
       <div className={styles.infoContainer}>
         <b>{stack.name}</b>
@@ -19,7 +19,7 @@ const getSoftSkills = (skills) => {
   return (
     <div className={styles.softTopContainer}>
         {skills.map((skill) => (
-          <div key={skill.title} data-aos="fade-left" className={styles.softContainer}>
+          <div key={skill.title} data-aos="fade-up" className={styles.softContainer}>
             {skill.icon()}
             <div className={styles.softDescriptionContainer}>
               <b>{skill.title}</b>

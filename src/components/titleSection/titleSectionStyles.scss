@@ -1,6 +1,8 @@
 $desk_height:11em;
 $desk_width: 40em;
 
+$board_width: max(40%, 30em);
+
 .outerContainer{
   width: 100%;
   height: max(40em, 100vh);
@@ -14,18 +16,18 @@ $desk_width: 40em;
 
 .innerContainer{
   width: 100%;
-  max-width: 80em;
+  max-width: 90em;
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-
 }
 
 .boardContainer{
   position: absolute;
   height: 100%;
-  width: 30em;
+  width: $board_width;
   left: 3em;
   display: flex;
   flex-direction: column;
@@ -447,9 +449,12 @@ $desk_width: 40em;
   }
 
   .boardContainer{
-    width: 26em;
+    width: calc(100% - 2em);
+    position: relative;
+    left: unset;
     h1{
-      font-size: 2.7em;
+      font-size: 2.5em;
+      text-align: center;
     }
   }
 }

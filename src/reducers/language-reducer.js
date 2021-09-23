@@ -1,6 +1,6 @@
 import { ActionTypes } from '../actions';
 
-const CountReducer = (state = 'korean', action) => {
+const LangReducer = (state = 'korean', action) => {
     switch (action.type) {
         case ActionTypes.SETKOREAN:
             return 'korean';
@@ -11,4 +11,4 @@ const CountReducer = (state = 'korean', action) => {
     }
 };
 
-export default CountReducer;
+export default LangReducer;
