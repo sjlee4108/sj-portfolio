@@ -74,7 +74,7 @@ const ProjectModal = (props) => {
               {contents.title}
             </Typography>
             <div className={styles.imageContainer}>
-              <img style={{ width: '20em', height: 'auto' }} src={contents.image} alt="" />
+              <img style={{ width: '26em', maxWidth: 'calc(100% - 1em)', height: 'auto' }} src={contents.image} alt="" />
             </div>
             {getTags(contents.tags, contents.position, contents.term)}
             <Typography id="modal-modal-description" sx={{ mt: 2, fontSize: 14, fontWeight: '400' }}>

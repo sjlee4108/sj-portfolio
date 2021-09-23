@@ -16,7 +16,7 @@ const TabContents = (props) => {
   const selectedType = valToType[value];
   return (
     <div className={styles.tabContentsContainer}>
-    {projects.english.filter((p, index) => p.type === selectedType).map((project) => <ProjectBox onClick={() => props.setModalOpen(project.id)} project={project} />)}
+    {projects.english.filter((p, index) => p.type === selectedType).map((project) => <ProjectBox key={project.id} onClick={() => props.setModalOpen(project.id)} project={project} />)}
     </div>
   );
 };

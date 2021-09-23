@@ -9,6 +9,7 @@ import DrinkBuzzGIF from '../assets/drinkBuzz.gif';
 import Lab1GIF from '../assets/lab1.gif';
 import DartConnectGIF from '../assets/dartconnect.gif';
 import LinkShareIMG from '../assets/linkshare.png';
+import PortfolioIMG from '../assets/portfolio.png';
 
 export const logo = 'SJ';
 export const name = 'Seungjae Lee';
@@ -200,6 +201,24 @@ export const projects = {
       'Used React Material ui library for the table format and redux for state management',
       'Used Node.js for backend with MongoDB as database',
       'Used jwt for authentication',
+      ],
+    },
+    {
+      id: 10,
+      title: 'Portfolio Page',
+      position: 'Individual',
+      tags: ['HTML', 'CSS', 'React'],
+      image: PortfolioIMG,
+      imageOverflow: true,
+      term: 'Summer 2021',
+      type: 'web',
+      description: `
+      I used React to create a personal portfolio. I focused on learning new techniques such as dark mode, transition, and animation."
+      `.replace(/\n/g, ' '),
+      bullets: [
+      'Implemented dark mode',
+      'Used AOS library for animation',
+      'Used media query for responsive web',
       ],
     },
 
