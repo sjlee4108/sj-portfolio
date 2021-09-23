@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { connect } from 'react-redux';
 import { createTheme, ThemeProvider } from '@mui/material';
+import { RiCloseFill } from 'react-icons/ri';
 import { setModalClose } from '../../actions';
 import { projects } from '../../constants/projects';
 import styles from './projectModalStyles.scss';
@@ -68,10 +69,13 @@ const ProjectModal = (props) => {
           aria-describedby="modal-modal-description"
         >
           <Box sx={style}>
+            <RiCloseFill size={30} onClick={props.setModalClose} className={styles.closeButton} />
             <Typography id="modal-modal-title" variant="h4" component="h1" sx={{ fontSize: 28, fontWeight: '400', mb: 2 }}>
               {contents.title}
             </Typography>
-            <img style={{ width: '20em', height: 'auto' }} src={contents.image} alt="" />
+            <div className={styles.imageContainer}>
+              <img style={{ width: '26em', maxWidth: 'calc(100% - 1em)', height: 'auto' }} src={contents.image} alt="" />
+            </div>
             {getTags(contents.tags, contents.position, contents.term)}
             <Typography id="modal-modal-description" sx={{ mt: 2, fontSize: 14, fontWeight: '400' }}>
               {contents.description}

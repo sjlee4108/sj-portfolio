@@ -26,7 +26,7 @@ const setDarkCSS = () => {
     bodyStyles.setProperty('--theme-navbar-background', 'rgba(240, 248, 255, 0.9)');
     bodyStyles.setProperty('--theme-section-background', 'whitesmoke');
     bodyStyles.setProperty('--theme-slider-background-2', 'rgb(240, 255, 255)');
-    bodyStyles.setProperty('--theme-slider-background-1', 'rgb(235, 240, 240)');
+    bodyStyles.setProperty('--theme-slider-background-1', 'rgb(225, 245, 245)');
     bodyStyles.setProperty('--theme-skill-background', 'rgb(245, 255, 255)');
     bodyStyles.setProperty('--theme-object-opacity', '1');
     bodyStyles.setProperty('--theme-light-color', 'rgba(0, 0, 0, 0)');
