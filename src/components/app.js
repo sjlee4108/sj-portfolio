@@ -16,7 +16,7 @@ const App = (props) => {
     const projectsScroll = () => projectsRef.current.scrollIntoView();
     const skillsScroll = () => skillsRef.current.scrollIntoView();
 
-    React.useEffect(() => { AOS.init(); AOS.refresh(); }, []);
+    React.useEffect(() => { AOS.init({ once: true }); AOS.refresh(); }, []);
 
     return (
         <Router>
