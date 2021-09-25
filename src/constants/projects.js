@@ -1,4 +1,8 @@
 // import ROSImage from '../assets/error.png';
+import React from 'react';
+import { AiOutlineGithub } from 'react-icons/ai';
+import { HiOutlinePresentationChartBar } from 'react-icons/hi';
+import { RiComputerLine, RiArticleLine } from 'react-icons/ri';
 import RobotImage2 from '../assets/robot2.jpeg';
 import ImageVid from '../assets/version1.gif';
 import ImageVidENGS21 from '../assets/engs21.gif';
@@ -11,6 +15,8 @@ import DartConnectGIF from '../assets/dartconnect.gif';
 import LinkShareIMG from '../assets/linkshare.png';
 import PortfolioIMG from '../assets/portfolio.png';
 
+const buttonSize = 22;
+const buttonStyle = { marginRight: '0.3em' };
 export const logo = 'SJ';
 export const name = 'Seungjae Lee';
 export const projects = {
@@ -33,6 +39,7 @@ export const projects = {
       'Created admin webpage for adding new meditation(React)',
       'Created CRUD API calls for meditation, journal and user information (Node.js, JWT for Auth, MongoDB)',
       'Beta version expected to be launched in September and tested by clinicians.'],
+      buttons: [],
     },
     {
       id: 1,
@@ -53,6 +60,7 @@ export const projects = {
         'Created dashboards, homepage, and event pages and highly reusable components(buttons, tabs ...)',
         'Received positive feedbacks from Positive Tracks and past user on the beta',
         'Full version expected to be released from PT'],
+      buttons: [{ text: 'Deployed', link: 'https://positive-tracks-66827.web.app/', icon: () => <RiComputerLine size={buttonSize} style={buttonStyle} /> }],
     },
     {
       id: 2,
@@ -73,6 +81,7 @@ export const projects = {
         'Created maps of real-environments using SLAM and simulation environment using Gazebo',
         'Debugged the current system and improved the performance using Rviz',
         'Work presented at Colby Undergraduate Summer Research Retreat'],
+      buttons: [],
     },
     {
       id: 3,
@@ -92,6 +101,11 @@ export const projects = {
       'Studied research papers of conducted experiments of spatial disorientation and applied our model to the result',
       'Collect data for the accident of Kobe Bryant and simulate the crash under the given condition. (Image)',
       'Work presented at Vestibular-Oriented Research Meeting 2021'],
+      buttons: [
+        { text: 'School Article', link: 'https://www.colby.edu/magazine/when-the-body-deceives/', icon: () => <RiArticleLine size={buttonSize} style={buttonStyle} /> },
+        { text: 'Poster',
+          link: 'https://drive.google.com/file/d/10oRGUpBsswqGnshhlUdjkCV1y3OOoScg/view?usp=sharing',
+          icon: () => <HiOutlinePresentationChartBar size={buttonSize} style={buttonStyle} /> }],
     },
     {
       id: 4,
@@ -111,6 +125,10 @@ export const projects = {
       'Wrote the codebase for running motors and reading temperature on Arduino',
       'CAD designed rack & pinion, relevant holders and temperature system container',
       'Work selected to present for Thayer open house'],
+      buttons: [
+        { text: 'Final Presentation',
+          link: 'https://docs.google.com/presentation/d/19S30i-kro4Qkq5NJCDlZf0vWnaCq2RvJAYnHKCONvvo/edit?usp=sharing',
+          icon: () => <HiOutlinePresentationChartBar size={buttonSize} style={buttonStyle} /> }],
     },
     {
       id: 5,
@@ -130,6 +148,9 @@ export const projects = {
       'Used CSS checkbox https://css-tricks.com/the-checkbox-hack/',
       'Used media query to build a responsive web',
       ],
+      buttons: [
+        { text: 'Deployed', link: 'https://dartmouth-cs52-21s.github.io/lab1-landingpage-sjlee4108/', icon: () => <RiComputerLine size={buttonSize} style={buttonStyle} /> },
+        { text: 'Github', link: 'https://github.com/dartmouth-cs52-21S/lab1-landingpage-sjlee4108', icon: () => <AiOutlineGithub size={buttonSize} style={buttonStyle} /> }],
     },
     {
       id: 6,
@@ -147,6 +168,9 @@ export const projects = {
       'Added animation, transition to make web more interactive.',
       'Used JSON to save and load quiz contents',
       ],
+       buttons: [
+        { text: 'Deployed', link: 'https://dartmouth-cs52-21s.github.io/lab2-sjlee4108/', icon: () => <RiComputerLine size={buttonSize} style={buttonStyle} /> },
+        { text: 'Github', link: 'https://github.com/dartmouth-cs52-21S/lab2-sjlee4108', icon: () => <AiOutlineGithub size={buttonSize} style={buttonStyle} /> }],
     },
     {
       id: 7,
@@ -164,6 +188,10 @@ export const projects = {
       'Used Firebase Realtime database with Google Auth as backend',
       'User can have their own boards and share code with others',
       'Notes support markdown syntax and are draggable',
+      ],
+      buttons: [
+        { text: 'Deployed', link: 'https://compassionate-fermi-1eecdd.netlify.app/', icon: () => <RiComputerLine size={buttonSize} style={buttonStyle} /> },
+        { text: 'Github', link: 'https://github.com/dartmouth-cs52-21S/react-notes-sjlee4108', icon: () => <AiOutlineGithub size={buttonSize} style={buttonStyle} /> },
       ],
     },
     {
@@ -184,6 +212,10 @@ export const projects = {
       'Replicated Instagram feed structure including sidebar',
       'Web/mobile responsive using media queries',
       ],
+      buttons: [
+        { text: 'Deployed', link: 'https://nifty-jepsen-d9e082.netlify.app/', icon: () => <RiComputerLine size={buttonSize} style={buttonStyle} /> },
+        { text: 'Github', link: 'https://github.com/sjlee4108/DALI_SNS_CHALLENGE', icon: () => <AiOutlineGithub size={buttonSize} style={buttonStyle} /> },
+      ],
     },
     {
       id: 9,
@@ -202,6 +234,11 @@ export const projects = {
       'Used Node.js for backend with MongoDB as database',
       'Used jwt for authentication',
       ],
+      buttons: [
+        { text: 'Deployed', link: 'https://nifty-jepsen-d9e082.netlify.app/', icon: () => <RiComputerLine size={buttonSize} style={buttonStyle} /> },
+        { text: 'Front-end', link: 'https://github.com/dartmouth-cs52-21S/platform-client-sjlee4108', icon: () => <AiOutlineGithub size={buttonSize} style={buttonStyle} /> },
+        { text: 'Back-end', link: 'https://github.com/dartmouth-cs52-21S/platform-api-sjlee4108', icon: () => <AiOutlineGithub size={buttonSize} style={buttonStyle} /> },
+      ],
     },
     {
       id: 10,
@@ -219,6 +256,9 @@ export const projects = {
       'Implemented dark mode',
       'Used AOS library for animation',
       'Used media query for responsive web',
+      ],
+      buttons: [
+        { text: 'Github', link: 'https://github.com/sjlee4108/sj-portfolio', icon: () => <AiOutlineGithub size={buttonSize} style={buttonStyle} /> },
       ],
     },
 
