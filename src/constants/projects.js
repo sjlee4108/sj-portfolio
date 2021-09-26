@@ -14,6 +14,8 @@ import Lab1GIF from '../assets/lab1.gif';
 import DartConnectGIF from '../assets/dartconnect.gif';
 import LinkShareIMG from '../assets/linkshare.png';
 import PortfolioIMG from '../assets/portfolio.png';
+import deliverer from '../assets/deliverer.gif';
+import analytics from '../assets/analytics.png';
 
 const buttonSize = 22;
 const buttonStyle = { marginRight: '0.3em' };
@@ -259,6 +261,50 @@ export const projects = {
       ],
       buttons: [
         { text: 'Github', link: 'https://github.com/sjlee4108/sj-portfolio', icon: () => <AiOutlineGithub size={buttonSize} style={buttonStyle} /> },
+      ],
+    },
+    {
+      id: 11,
+      title: 'CS 81: Deliverer',
+      position: 'Individual',
+      tags: ['ROS', 'Python'],
+      image: deliverer,
+      imageOverflow: true,
+      term: 'Fall 2020',
+      type: 'others',
+      description: `
+      For CS 81 final project, our team implemented an algorithm for package delivering robot. 
+      We used Dijkstra algorithm for finding an optimal path of picking/dropping items and 
+      Bug2 algorithm for obstacle avoidance
+      `.replace(/\n/g, ' '),
+      bullets: [
+      'Implemented Bug2 algorithm for obstacle avoidance (PID controller & finite state machine)',
+      'Created and ran simulation on test environments to find optimal parameters and failed cases (Bug2 limit)',
+      ],
+      buttons: [
+        { text: 'Final Report', link: 'https://drive.google.com/file/d/1zuBoj_5XLi0Cuq31u7nDDmcPcZ2AaYVQ/view?usp=sharing', icon: () => <RiArticleLine size={buttonSize} style={buttonStyle} /> },
+        { text: 'Github', link: 'https://github.com/sjlee4108/robot-deliverer', icon: () => <AiOutlineGithub size={buttonSize} style={buttonStyle} /> },
+      ],
+    },
+    {
+      id: 12,
+      title: 'ENGM 182: Siemens Data Prediction',
+      position: 'Individual',
+      tags: ['Python', 'R'],
+      image: analytics,
+      imageOverflow: true,
+      term: 'Fall 2020',
+      type: 'others',
+      description: `
+      For Data Analytics final project, our team worked with Siemens(Germany) to predict the internal cost by different categories and sections.
+      Our team preprocessed the company data, tested different time-series forecast models and provided recommendations based on the result." 
+      `.replace(/\n/g, ' '),
+      bullets: [
+      'Preprocessed the dataset using Python',
+      'Researched different models of time-series forecasting and tested TBATS, ARIMA on the dataset',
+      'Used a subset of the data to evaluate the model and then predicted with the full dataset (R)',
+      ],
+      buttons: [
       ],
     },
 
