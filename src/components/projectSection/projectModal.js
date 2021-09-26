@@ -42,6 +42,14 @@ const getTags = (tags, position, term) => {
   );
 };
 
+const getButtons = (buttonList) => {
+  return (
+    <div className={styles.buttonContainer}>
+        {buttonList.map((b) => <a target="_blank" href={b.link} rel="noreferrer">{b.icon()}{b.text}</a>)}
+    </div>
+  );
+};
+
 const ProjectModal = (props) => {
   const { open, projectIndex } = props;
   const style = {
@@ -81,6 +89,7 @@ const ProjectModal = (props) => {
               {contents.description}
             </Typography>
             {getBulletPoints(contents.bullets)}
+            {getButtons(contents.buttons)}
           </Box>
         </Modal>
       </ThemeProvider>
