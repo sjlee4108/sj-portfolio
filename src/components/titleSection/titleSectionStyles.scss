@@ -256,7 +256,8 @@ $board_width: max(40%, 30em);
   background-color: var(--theme-monitor-color);
   color: var(--theme-monitor-text-color);
   position: relative;
-  transition: all 0.2s linear;
+  transition: background-color 0.2s linear;
+  transition: color 0.2s linear;
 }
 
 .redCircle{

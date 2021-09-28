@@ -209,9 +209,9 @@ export const projects = {
       For the personal project, I created a school SNS that replicates the structure of Instagram and Facebook.
       `.replace(/\n/g, ' '),
       bullets: [
-      'Used Firebase Realtime database with email & passowrd auth as backend',
+      'Used Firebase Realtime database with email & password auth as backend',
       'Used Mapquest API to get a map image of hometown',
-      'Replicated Instagram feed structure including sidebar',
+      'Replicated Instagram feed structure including recommendation sidebar',
       'Web/mobile responsive using media queries',
       ],
       buttons: [

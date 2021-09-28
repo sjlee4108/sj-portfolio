@@ -90,7 +90,7 @@ const Python = () => {
 
 const Matlab = () => {
   return (
-    <img src={MatlabImg} alt="" style={{ width: '65px', height: '65px', boxSizing: 'border-box', padding: '7px', backgroundColor: 'white', borderRadius: '10px' }} />
+    <img src={MatlabImg} alt="" style={{ width: '65px', height: 'auto', boxSizing: 'border-box', padding: '7px', backgroundColor: 'white', borderRadius: '10px' }} />
   );
 };
 
@@ -108,7 +108,7 @@ export const techStacks = [
   {
     name: 'React-Native',
     icon: ReactNative,
-    weight: 0.75,
+    weight: 0.7,
   },
   {
     name: 'HTML / CSS',
@@ -123,7 +123,7 @@ export const techStacks = [
   {
     name: 'MATLAB',
     icon: Matlab,
-    weight: 0.6,
+    weight: 0.5,
   },
 ];
 
