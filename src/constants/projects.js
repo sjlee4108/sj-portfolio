@@ -5,7 +5,7 @@ import { HiOutlinePresentationChartBar } from 'react-icons/hi';
 import { RiComputerLine, RiArticleLine } from 'react-icons/ri';
 import RobotImage2 from '../assets/robot2.jpeg';
 import ImageVid from '../assets/version1.gif';
-import ImageVidENGS21 from '../assets/engs21.gif';
+import ImageVidENGS21 from '../assets/engs21_v2.gif';
 import Vitalize from '../assets/2smartphones.png';
 import PT from '../assets/PT.png';
 import ReactNoteGIF from '../assets/reactNote.gif';
@@ -16,6 +16,7 @@ import LinkShareIMG from '../assets/linkshare.png';
 import PortfolioIMG from '../assets/portfolio.png';
 import deliverer from '../assets/deliverer.gif';
 import analytics from '../assets/analytics.png';
+import android from '../assets/android.png';
 
 const buttonSize = 22;
 const buttonStyle = { marginRight: '0.3em' };
@@ -293,7 +294,7 @@ export const projects = {
       tags: ['Python', 'R'],
       image: analytics,
       imageOverflow: true,
-      term: 'Fall 2020',
+      term: 'Spring 2021',
       type: 'others',
       description: `
       For Data Analytics final project, our team worked with Siemens(Germany) to predict the internal cost by different categories and sections.
@@ -305,6 +306,30 @@ export const projects = {
       'Used a subset of the data to evaluate the model and then predicted with the full dataset (R)',
       ],
       buttons: [
+      ],
+    },
+
+    {
+      id: 13,
+      title: 'COSC 65: Fridge Companion',
+      position: 'Team Project',
+      tags: ['Android', 'Java', 'Firebase'],
+      image: android,
+      imageOverflow: true,
+      term: 'Winter 2021',
+      type: 'app',
+      description: `
+      For Android Programming final project, our team worked on creating a fridge management app. It keeps track of items in fridge by expiration date and warns user if a food is expiring. 
+      Since a fridge in an app can be accessed by any users with the unique key, it can also be used for managing shared fridges or for party-food preparation.
+      The app also supports auto-filling information (food name, image etc ...) by reading barcode." 
+      `.replace(/\n/g, ' '),
+      bullets: [
+      'Implemented item info page, fridge item page (listview, gridview), and user logs',
+      'Designed the firebase data structure and connected the front-end with firebase',
+      'Implemented multiple user feature',
+      ],
+      buttons: [
+        { text: 'Github', link: 'https://github.com/sjlee4108/FridgeCompanion', icon: () => <AiOutlineGithub size={buttonSize} style={buttonStyle} /> },
       ],
     },
 
