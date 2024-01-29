@@ -1,10 +1,13 @@
 {
+  "homepage": "http://sjlee4108.github.io/sj-portfolio",
   "name": "y",
   "version": "1.0.0",
   "description": "*description*",
   "main": "src/index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "eslint src",
     "build": "npm run clean; NODE_ENV=production webpack --color; cp -f _redirects dist/",
     "winbuild": "npm run clean & SET NODE_ENV=production& webpack --color",
@@ -19,7 +22,6 @@
   "bugs": {
     "url": "https://github.com/dartmouth-cs52-21S/starterpack-michellecchen/issues"
   },
-  "homepage": "https://github.com/dartmouth-cs52-21S/starterpack-michellecchen#readme",
   "devDependencies": {
     "@babel/core": "^7.13.15",
     "@babel/eslint-parser": "^7.13.14",
@@ -36,6 +38,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-webpack-plugin": "^2.5.3",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.4.1",
     "postcss-loader": "^5.2.0",
